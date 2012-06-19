@@ -23,6 +23,9 @@
 @synthesize mvimage1_1 = _mvimage1_1;
 @synthesize mvimage2_1 = _mvimage2_1;
 @synthesize mvimage3_1 = _mvimage3_1;
+@synthesize mvimage2 = _mvimage2;
+@synthesize mvimage4 = _mvimage4;
+@synthesize mvimage5 = _mvimage5;
 
 - (void)awakeFromNib
 {
@@ -35,10 +38,15 @@
 {
     [super viewDidLoad];
      self.mvimage.image = [UIImage imageNamed:@"1.jpg"];
+     self.mvimage2.image = [UIImage imageNamed:@"2.jpg"];
      self.mvimage3.image = [UIImage imageNamed:@"3.jpg"];
+     self.mvimage4.image = [UIImage imageNamed:@"4.jpg"];
+     self.mvimage5.image = [UIImage imageNamed:@"5.jpg"];
      self.mvimage1_1.image = [UIImage imageNamed:@"mvimage1.1.jpg"];
      self.mvimage2_1.image = [UIImage imageNamed:@"mvimage2.1.jpg"];
      self.mvimage3_1.image = [UIImage imageNamed:@"mvimage3.1.jpg"];
+   
+     
 	// Do any additional setup after loading the view, typically from a nib.
     /*self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -54,6 +62,9 @@
     [self setMvimage1_1:nil];
     [self setMvimage2_1:nil];
     [self setMvimage3_1:nil];
+    [self setMvimage2:nil];
+    [self setMvimage4:nil];
+    [self setMvimage5:nil];
     [super viewDidUnload];
    
     

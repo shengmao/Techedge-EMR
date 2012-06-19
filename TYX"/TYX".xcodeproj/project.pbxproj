@@ -23,6 +23,10 @@
 		428E25D115877A52008BAA6F /* tyxDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25D015877A52008BAA6F /* tyxDetailViewController.m */; };
 		428E25D915877F4C008BAA6F /* tyxsecmasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */; };
 		428E25E3158789C2008BAA6F /* tyxsecdetaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */; };
+		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
+		42EA5F511590757B001F5E99 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42EA5F501590757B001F5E99 /* 2.jpg */; };
+		42EA5F531590757F001F5E99 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42EA5F521590757F001F5E99 /* 4.jpg */; };
+		42EA5F5515907582001F5E99 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42EA5F5415907582001F5E99 /* 5.jpg */; };
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +56,11 @@
 		428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxsecmasterViewController.m; sourceTree = "<group>"; };
 		428E25E1158789C2008BAA6F /* tyxsecdetaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxsecdetaiViewController.h; sourceTree = "<group>"; };
 		428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxsecdetaiViewController.m; sourceTree = "<group>"; };
+		42EA5F44158FA0DC001F5E99 /* tyxnewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxnewDetailViewController.h; sourceTree = "<group>"; };
+		42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxnewDetailViewController.m; sourceTree = "<group>"; };
+		42EA5F501590757B001F5E99 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = ../../../../Downloads/2.jpg; sourceTree = "<group>"; };
+		42EA5F521590757F001F5E99 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = ../../../../Downloads/4.jpg; sourceTree = "<group>"; };
+		42EA5F5415907582001F5E99 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = ../../../../Downloads/5.jpg; sourceTree = "<group>"; };
 		42EDD2B5158F298D001A2AD2 /* tyxloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxloginViewController.h; sourceTree = "<group>"; };
 		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
 		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
@@ -111,6 +120,8 @@
 				428E25CD15877A52008BAA6F /* tyxMasterViewController.m */,
 				428E25CF15877A52008BAA6F /* tyxDetailViewController.h */,
 				428E25D015877A52008BAA6F /* tyxDetailViewController.m */,
+				42EA5F44158FA0DC001F5E99 /* tyxnewDetailViewController.h */,
+				42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */,
 				428E25D715877F4C008BAA6F /* tyxsecmasterViewController.h */,
 				428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */,
 				428E25E1158789C2008BAA6F /* tyxsecdetaiViewController.h */,
@@ -126,7 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				428592CC158F5DB0005BAA85 /* 1.jpg */,
+				42EA5F501590757B001F5E99 /* 2.jpg */,
 				428592CE158F5DBB005BAA85 /* 3.jpg */,
+				42EA5F521590757F001F5E99 /* 4.jpg */,
+				42EA5F5415907582001F5E99 /* 5.jpg */,
 				428592D4158F64AB005BAA85 /* mvimage1.1.jpg */,
 				428592D2158F646B005BAA85 /* mvimage2.1.jpg */,
 				428592D6158F64B0005BAA85 /* mvimage3.1.jpg */,
@@ -196,6 +210,9 @@
 				428592D3158F646B005BAA85 /* mvimage2.1.jpg in Resources */,
 				428592D5158F64AB005BAA85 /* mvimage1.1.jpg in Resources */,
 				428592D7158F64B0005BAA85 /* mvimage3.1.jpg in Resources */,
+				42EA5F511590757B001F5E99 /* 2.jpg in Resources */,
+				42EA5F531590757F001F5E99 /* 4.jpg in Resources */,
+				42EA5F5515907582001F5E99 /* 5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +231,7 @@
 				428E25E3158789C2008BAA6F /* tyxsecdetaiViewController.m in Sources */,
 				42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */,
 				42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */,
+				42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

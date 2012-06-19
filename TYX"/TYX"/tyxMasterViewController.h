@@ -18,5 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *mvimage1_1;
 @property (weak, nonatomic) IBOutlet UIImageView *mvimage2_1;
 @property (weak, nonatomic) IBOutlet UIImageView *mvimage3_1;
+@property (weak, nonatomic) IBOutlet UIImageView *mvimage2;
+@property (weak, nonatomic) IBOutlet UIImageView *mvimage4;
+@property (weak, nonatomic) IBOutlet UIImageView *mvimage5;
 
 @end
