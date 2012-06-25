@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    usertabsarray = [[NSMutableArray alloc] initWithObjects:@"Übersicht", @"Chronik", @"Annamenese", @"Vitalwerte", @"Labor", @"Demographie", @"Dokumente", @"Abrechnung", @"EMR Info",nil];
+    usertabsarray = [[NSMutableArray alloc] initWithObjects:@"Übersicht", @"Chronik", @"Anamnese", @"Vitalwerte", @"Labor", @"Demographie", @"Dokumente", @"Abrechnung", @"EMR Info",nil];
     
     
 	// Do any additional setup after loading the view.
@@ -82,18 +82,7 @@
 {
     //read the current selection in tableview and perform the next segue
      NSString *object = [self.usertabsarray objectAtIndex:indexPath.row];
-    if(object == @"Übersicht"){
-        [self performSegueWithIdentifier:@"Übersicht" sender:self];
-    }
-    else if(object == @"Chronik"){
-    [self performSegueWithIdentifier:@"Chronik" sender:self];
-    }
-    else if (object ==@"Annamenese") {
-        [self performSegueWithIdentifier:@"Annamenese" sender:self];
-    }
-    else if (object ==@"Abrechnung") {
-        [self performSegueWithIdentifier:@"Abrechnung" sender:self];
-    }
+    [self performSegueWithIdentifier:object sender:self];
 }
 
 @end

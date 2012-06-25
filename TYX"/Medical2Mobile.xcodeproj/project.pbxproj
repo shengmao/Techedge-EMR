@@ -55,6 +55,7 @@
 		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
+		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,10 +75,10 @@
 		428E25B715877A52008BAA6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		428E25B915877A52008BAA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		428E25BB15877A52008BAA6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
+		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
 		428E25C115877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		428E25C315877A52008BAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
+		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
 		428E25C615877A52008BAA6F /* tyxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxAppDelegate.h; sourceTree = "<group>"; };
 		428E25C715877A52008BAA6F /* tyxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxAppDelegate.m; sourceTree = "<group>"; };
 		428E25CA15877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -119,6 +120,9 @@
 		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
 		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
 		42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tyxthirddetailViewController.m; path = "Detail view/tyxthirddetailViewController.m"; sourceTree = "<group>"; };
+		54B0B02F1598829300068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
+		54B0B0301598829400068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
+		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
 				428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */,
 				428E25BA15877A52008BAA6F /* Foundation.framework in Frameworks */,
 				428E25BC15877A52008BAA6F /* CoreGraphics.framework in Frameworks */,
@@ -165,6 +170,7 @@
 		428E25B615877A52008BAA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B0331598836C00068171 /* QuickLook.framework */,
 				428E25B715877A52008BAA6F /* UIKit.framework */,
 				428E25B915877A52008BAA6F /* Foundation.framework */,
 				428E25BB15877A52008BAA6F /* CoreGraphics.framework */,
@@ -175,6 +181,7 @@
 		428E25BD15877A52008BAA6F /* TYX" */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B0321598829D00068171 /* DetailViews */,
 				428E25C615877A52008BAA6F /* tyxAppDelegate.h */,
 				428E25C715877A52008BAA6F /* tyxAppDelegate.m */,
 				42D4DBBC159472BA0088609B /* loginView */,
@@ -273,6 +280,15 @@
 				422845D615933BB6002A4F3F /* mvimage3.1.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		54B0B0321598829D00068171 /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				54B0B02F1598829300068171 /* TESingleDocumentListViewController.h */,
+				54B0B0301598829400068171 /* TESingleDocumentListViewController.m */,
+			);
+			name = DetailViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
