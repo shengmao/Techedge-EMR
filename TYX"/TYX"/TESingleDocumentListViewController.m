@@ -8,7 +8,7 @@
 
 #import "TESingleDocumentListViewController.h"
 #import <QuickLook/QuickLook.h>
-#import "TEViewController.h"
+
 
 @interface TESingleDocumentListViewController ()
 
@@ -35,6 +35,7 @@
     
     //set up data for table view
     fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview", nil];
+    NSLog(@"%@",fileNameList);
     
 }
 

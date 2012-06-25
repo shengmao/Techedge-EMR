@@ -56,6 +56,8 @@
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
 		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
+		54B0B03915988DDF00068171 /* chronik.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B03815988DDF00068171 /* chronik.png */; };
+		54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,9 +122,10 @@
 		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
 		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
 		42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tyxthirddetailViewController.m; path = "Detail view/tyxthirddetailViewController.m"; sourceTree = "<group>"; };
-		54B0B02F1598829300068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
-		54B0B0301598829400068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
 		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		54B0B03815988DDF00068171 /* chronik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronik.png; sourceTree = "<group>"; };
+		54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
+		54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +184,6 @@
 		428E25BD15877A52008BAA6F /* TYX" */ = {
 			isa = PBXGroup;
 			children = (
-				54B0B0321598829D00068171 /* DetailViews */,
 				428E25C615877A52008BAA6F /* tyxAppDelegate.h */,
 				428E25C715877A52008BAA6F /* tyxAppDelegate.m */,
 				42D4DBBC159472BA0088609B /* loginView */,
@@ -230,6 +232,8 @@
 				428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */,
 				42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */,
 				42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */,
+				54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */,
+				54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */,
 			);
 			name = splitView;
 			sourceTree = "<group>";
@@ -246,6 +250,7 @@
 		42D4DBC51594769A0088609B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B03815988DDF00068171 /* chronik.png */,
 				4269917B1597D64E005DEACC /* neuro spinal.jpg */,
 				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
 				42D4DBE31595297A0088609B /* intranet_icon1.png */,
@@ -280,15 +285,6 @@
 				422845D615933BB6002A4F3F /* mvimage3.1.jpg */,
 			);
 			name = images;
-			sourceTree = "<group>";
-		};
-		54B0B0321598829D00068171 /* DetailViews */ = {
-			isa = PBXGroup;
-			children = (
-				54B0B02F1598829300068171 /* TESingleDocumentListViewController.h */,
-				54B0B0301598829400068171 /* TESingleDocumentListViewController.m */,
-			);
-			name = DetailViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +372,7 @@
 				42D4DBE61595297B0088609B /* Intranet-icon2.png in Resources */,
 				4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */,
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
+				54B0B03915988DDF00068171 /* chronik.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +394,7 @@
 				42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */,
 				42D4DBC4159474450088609B /* userselectionViewController.m in Sources */,
 				426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */,
+				54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

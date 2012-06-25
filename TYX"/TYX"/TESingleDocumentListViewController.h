@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuickLook/QuickLook.h>
 
-@interface TESingleDocumentListViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, QLPreviewControllerDataSource, QLPreviewControllerDelegate>
+@interface TESingleDocumentListViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource, QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 {
     NSArray *fileNameList;
-    //IBOutlet UITableView *FileListTableView;
+    IBOutlet UITableView *FileListTableView;
     NSURL *fileURL;
 }
 
