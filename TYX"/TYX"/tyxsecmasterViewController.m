@@ -50,8 +50,16 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
-}
+    if(interfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    if(interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    else 
+    {
+        return NO;
+    } }
 
 #pragma mark - Table view data source
 /*

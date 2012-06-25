@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tyxthirddetailViewController : UIViewController
+@interface tyxthirddetailViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIImageView *Eclipse;
 
 @end

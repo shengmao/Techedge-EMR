@@ -1,24 +1,22 @@
 //
-//  tyxloginViewController.m
+//  userselectionViewController.m
 //  TYX"
 //
-//  Created by LISComputer on 18.06.12.
+//  Created by LISComputer on 22.06.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "tyxloginViewController.h"
+#import "userselectionViewController.h"
 
-@interface tyxloginViewController ()
+@interface userselectionViewController ()
 
 @end
 
-@implementation tyxloginViewController
-@synthesize customerLogo;
-@synthesize usernameTextfield;
-@synthesize passwortTextfield;
-@synthesize companyLogo;
-
-
+@implementation userselectionViewController
+@synthesize patientview;
+@synthesize emailview;
+@synthesize calenderview;
+@synthesize Intranetview;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,18 +30,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    customerLogo.image = [UIImage imageNamed:@"neurospinecenter_logo.jpg"];
-    companyLogo.image = [UIImage imageNamed:@"techedge_leverage_logo.jpg"];
+     patientview.image = [UIImage imageNamed:@"patient1.jpg"];
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
-    [self setCustomerLogo:nil];
-    [self setUsernameTextfield:nil];
-    [self setPasswortTextfield:nil];
-    [self setCompanyLogo:nil];
+    [self setPatientview:nil];
+    [self setEmailview:nil];
+    [self setCalenderview:nil];
+    [self setIntranetview:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -59,11 +55,13 @@
     else 
     {
         return NO;
-    }    
+    } }
+/*
+- (void)mouseDragged:(NSEvent *)event {
+    NSPoint eventLocation = [event locationInWindow];
+    center = [self convertPoint:eventLocation fromView:nil];
+    //[self setNeedsDisplay:YES];
 }
+*/
 
-- (IBAction)establishConnection:(id)sender {
-    //check logindata and grants access to further views
-    [self performSegueWithIdentifier:@"loginSuccessful" sender:self];
-}
 @end

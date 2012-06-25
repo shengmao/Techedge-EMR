@@ -62,11 +62,19 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return YES;
-}
+    if(interfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    if(interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    else 
+    {
+        return NO;
+    } }
 
 #pragma mark - Split view
-
+/*
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
     barButtonItem.title = NSLocalizedString(@"Master", @"Masterha2");
@@ -80,5 +88,5 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
-
+*/
 @end

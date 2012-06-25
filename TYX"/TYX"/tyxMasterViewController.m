@@ -20,9 +20,6 @@
 @synthesize detailViewController = _detailViewController;
 @synthesize mvimage = _mvimage;
 @synthesize mvimage3 = _mvimage3;
-@synthesize mvimage1_1 = _mvimage1_1;
-@synthesize mvimage2_1 = _mvimage2_1;
-@synthesize mvimage3_1 = _mvimage3_1;
 @synthesize mvimage2 = _mvimage2;
 @synthesize mvimage4 = _mvimage4;
 @synthesize mvimage5 = _mvimage5;
@@ -42,9 +39,6 @@
      self.mvimage3.image = [UIImage imageNamed:@"3.jpg"];
      self.mvimage4.image = [UIImage imageNamed:@"4.jpg"];
      self.mvimage5.image = [UIImage imageNamed:@"5.jpg"];
-     self.mvimage1_1.image = [UIImage imageNamed:@"mvimage1.1.jpg"];
-     self.mvimage2_1.image = [UIImage imageNamed:@"mvimage2.1.jpg"];
-     self.mvimage3_1.image = [UIImage imageNamed:@"mvimage3.1.jpg"];
    
      
 	// Do any additional setup after loading the view, typically from a nib.
@@ -59,9 +53,6 @@
 {
     [self setMvimage:nil];
     [self setMvimage3:nil];
-    [self setMvimage1_1:nil];
-    [self setMvimage2_1:nil];
-    [self setMvimage3_1:nil];
     [self setMvimage2:nil];
     [self setMvimage4:nil];
     [self setMvimage5:nil];
@@ -73,7 +64,16 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return YES;
+    if(interfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    if(interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    else 
+    {
+        return NO;
+    }  
 }
 /*
 - (void)insertNewObject:(id)sender

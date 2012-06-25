@@ -10,13 +10,13 @@
 
 @interface tyxsecdetaiViewController ()
 
-@property (strong, nonatomic) UIPopoverController *secmasterPopoverController;
+//@property (strong, nonatomic) UIPopoverController *secmasterPopoverController;
 
 @end
 
 @implementation tyxsecdetaiViewController
 
-@synthesize secmasterPopoverController = _masterPopoverController;
+//@synthesize secmasterPopoverController = _masterPopoverController;
 
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,11 +42,19 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
-}
+    if(interfaceOrientation == UIInterfaceOrientationPortrait){
+        return NO;
+    }
+    if(interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    else 
+    {
+        return NO;
+    } }
 
 #pragma mark - Split view
-
+/*
 - (void)splitViewController:(UISplitViewController *)secsplitController willHideViewController:(UIViewController *)aviewController withBarButtonItem:(UIBarButtonItem *)secbarButtonItem forPopoverController:(UIPopoverController *)pc
 {
     secbarButtonItem.title = NSLocalizedString(@"secMaster", @"secMaster");
@@ -60,5 +68,5 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.secmasterPopoverController = nil;
 }
-
+*/
 @end

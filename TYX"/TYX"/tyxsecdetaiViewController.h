@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface tyxsecdetaiViewController : UIViewController <UISplitViewControllerDelegate>
-
+@interface tyxsecdetaiViewController : UITableViewController
 @end
