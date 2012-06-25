@@ -72,6 +72,7 @@
    
     // Configure the cell...
     cell.textLabel.text = [self.usertabsarray objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
@@ -81,7 +82,10 @@
 {
     //read the current selection in tableview and perform the next segue
      NSString *object = [self.usertabsarray objectAtIndex:indexPath.row];
-    if(object == @"Chronik"){
+    if(object == @"Übersicht"){
+        [self performSegueWithIdentifier:@"Übersicht" sender:self];
+    }
+    else if(object == @"Chronik"){
     [self performSegueWithIdentifier:@"Chronik" sender:self];
     }
     else if (object ==@"Annamenese") {

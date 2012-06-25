@@ -70,14 +70,14 @@
 		4269917C1597D64E005DEACC /* Neuro Spine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neuro Spine.jpg"; sourceTree = "<group>"; };
 		426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeurospinewatermarkmasterviewViewController.h; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.h; sourceTree = "<group>"; };
 		426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeurospinewatermarkmasterviewViewController.m; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.m; sourceTree = "<group>"; };
-		428E25B315877A52008BAA6F /* TYX".app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TYX\".app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E25B315877A52008BAA6F /* Medical2Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical2Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428E25B715877A52008BAA6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		428E25B915877A52008BAA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		428E25BB15877A52008BAA6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		428E25BF15877A52008BAA6F /* TYX"-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TYX\"-Info.plist"; sourceTree = "<group>"; };
+		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
 		428E25C115877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		428E25C315877A52008BAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		428E25C515877A52008BAA6F /* TYX"-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYX\"-Prefix.pch"; sourceTree = "<group>"; };
+		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
 		428E25C615877A52008BAA6F /* tyxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxAppDelegate.h; sourceTree = "<group>"; };
 		428E25C715877A52008BAA6F /* tyxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxAppDelegate.m; sourceTree = "<group>"; };
 		428E25CA15877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		428E25B415877A52008BAA6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				428E25B315877A52008BAA6F /* TYX".app */,
+				428E25B315877A52008BAA6F /* Medical2Mobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,10 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				42D4DBC51594769A0088609B /* images */,
-				428E25BF15877A52008BAA6F /* TYX"-Info.plist */,
+				428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */,
 				428E25C015877A52008BAA6F /* InfoPlist.strings */,
 				428E25C315877A52008BAA6F /* main.m */,
-				428E25C515877A52008BAA6F /* TYX"-Prefix.pch */,
+				428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		428E25B215877A52008BAA6F /* TYX" */ = {
+		428E25B215877A52008BAA6F /* Medical2Mobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "TYX"" */;
+			buildConfigurationList = 428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "Medical2Mobile" */;
 			buildPhases = (
 				428E25AF15877A52008BAA6F /* Sources */,
 				428E25B015877A52008BAA6F /* Frameworks */,
@@ -290,9 +290,9 @@
 			);
 			dependencies = (
 			);
-			name = "TYX\"";
+			name = Medical2Mobile;
 			productName = "TYX\"";
-			productReference = 428E25B315877A52008BAA6F /* TYX".app */;
+			productReference = 428E25B315877A52008BAA6F /* Medical2Mobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -304,7 +304,7 @@
 				CLASSPREFIX = tyx;
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "TYX"" */;
+			buildConfigurationList = 428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "Medical2Mobile" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,7 +316,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				428E25B215877A52008BAA6F /* TYX" */,
+				428E25B215877A52008BAA6F /* Medical2Mobile */,
 			);
 		};
 /* End PBXProject section */
@@ -457,9 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TYX\"/TYX\"-Prefix.pch";
-				INFOPLIST_FILE = "TYX\"/TYX\"-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TYX\"/Medical2Mobile-Prefix.pch";
+				INFOPLIST_FILE = "TYX\"/Medical2Mobile-Info.plist";
+				PRODUCT_NAME = Medical2Mobile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,9 +468,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TYX\"/TYX\"-Prefix.pch";
-				INFOPLIST_FILE = "TYX\"/TYX\"-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TYX\"/Medical2Mobile-Prefix.pch";
+				INFOPLIST_FILE = "TYX\"/Medical2Mobile-Info.plist";
+				PRODUCT_NAME = Medical2Mobile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -478,7 +478,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "TYX"" */ = {
+		428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "Medical2Mobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				428E25D215877A52008BAA6F /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "TYX"" */ = {
+		428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "Medical2Mobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				428E25D515877A52008BAA6F /* Debug */,
