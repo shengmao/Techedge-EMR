@@ -7,7 +7,6 @@
 //
 
 #import "tyxMasterViewController.h"
-
 #import "tyxDetailViewController.h"
 
 @interface tyxMasterViewController () {

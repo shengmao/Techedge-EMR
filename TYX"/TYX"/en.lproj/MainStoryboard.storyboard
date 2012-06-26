@@ -1966,7 +1966,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2508" y="-1835"/>
+            <point key="canvasLocation" x="1752" y="5357"/>
         </scene>
         <!--Table View Controller - Diagnostik-->
         <scene sceneID="wrH-hE-ubm">
