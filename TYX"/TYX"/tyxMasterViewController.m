@@ -59,7 +59,7 @@
         //send SQL statement to database
         if (sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL)==SQLITE_OK) {
 
-            NSMutableArray *sectionNumberArray = [NSMutableArray arrayWithObjects:@"", nil];
+            NSMutableArray *sectionNumberArray = [NSMutableArray arrayWithObjects: nil];
             //fetch result of SQL statement
             while (sqlite3_step(statement)==SQLITE_ROW) {
                 NSString *patientName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
@@ -109,8 +109,7 @@
     //returns number of rows in a section
     NSDictionary *helperDictionary = [wholePatientList objectAtIndex:section];
     NSArray *helperArray = [helperDictionary objectForKey:@"Patients"];
-    return 2;
-    //return [helperArray count];
+    return [helperArray count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -136,6 +135,7 @@
     NSDictionary *dictionary = [wholePatientList objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"Patients"];
     NSString *cellValue = [array objectAtIndex:indexPath.row];
+    NSLog(@"%@", cellValue);
     //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
     UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
     patientnameTextfield.text = cellValue;
@@ -150,12 +150,12 @@
 }
 
 
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
+//// Override to support conditional rearranging of the table view.
+//- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    // Return NO if you do not want the item to be re-orderable.
+//    return YES;
+//}
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
