@@ -17,6 +17,7 @@
 @implementation TESingleDocumentListViewController
 @synthesize FileListTableView;
 @synthesize fileURL;
+@synthesize pdfPath;
 
 #define kStringURLViewControllerPDF @"https://developer.apple.com/library/ios/DOCUMENTATION/NetworkingInternet/Reference/QLPreviewController_Class/QLPreviewController_Class.pdf"
 
@@ -34,7 +35,10 @@
 //    NSLog(@"%@",path);
     
     //set up data for table view
-    fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview", nil];
+    fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview",@"localPDF", nil];
+    
+	//set up pdfpath
+    pdfPath = [[NSBundle mainBundle] pathForResource:@"PDF" ofType:@"pdf"];
 }
 
 - (void)viewDidUnload
@@ -132,6 +136,8 @@
         case 2:
             fileURL = [NSURL URLWithString:kStringURLUIDocumentInteractionControllerPDF];
             break;
+        case 3:
+            fileURL = [NSURL fileURLWithPath:pdfPath];
     }
     
     //creating object of QLPreviewController
