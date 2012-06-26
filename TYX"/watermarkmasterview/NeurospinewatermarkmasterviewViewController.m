@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    usertabsarray = [[NSMutableArray alloc] initWithObjects:@"Übersicht", @"Chronik", @"Diagnostik", @"Vitalwerte", @"Labor", @"Demographie", @"Dokumente", @"Abrechnung", @"EMR Info",nil];
+    usertabsarray = [[NSMutableArray alloc] initWithObjects:@"Übersicht", @"Chronik", @"Diagnostik", @"klinische Aufträge", @"Vitalwerte", @"Labor", @"Demographie", @"Dokumente", @"Abrechnung", @"EMR Info",nil];
     
     
 	// Do any additional setup after loading the view.
