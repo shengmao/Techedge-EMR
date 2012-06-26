@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
 @class tyxDetailViewController;
 
 @interface tyxMasterViewController : UITableViewController
+{
+    sqlite3 *medicaldb;
+    NSString *databasePath;
+}
 
 @property (strong, nonatomic) tyxDetailViewController *detailViewController;
-@property (weak, nonatomic) IBOutlet UIImageView *mvimage;
-@property (weak, nonatomic) IBOutlet UIImageView *mvimage3;
-@property (weak, nonatomic) IBOutlet UIImageView *mvimage2;
-@property (weak, nonatomic) IBOutlet UIImageView *mvimage4;
-@property (weak, nonatomic) IBOutlet UIImageView *mvimage5;
+
 
 @end

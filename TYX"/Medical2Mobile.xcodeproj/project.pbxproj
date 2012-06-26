@@ -12,9 +12,6 @@
 		422845D215933BAC002A4F3F /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845CD15933BAC002A4F3F /* 3.jpg */; };
 		422845D315933BAC002A4F3F /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845CE15933BAC002A4F3F /* 4.jpg */; };
 		422845D415933BAC002A4F3F /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845CF15933BAC002A4F3F /* 5.jpg */; };
-		422845D715933BB6002A4F3F /* mvimage3.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D615933BB6002A4F3F /* mvimage3.1.jpg */; };
-		422845D915933BBA002A4F3F /* mvimage2.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D815933BBA002A4F3F /* mvimage2.1.jpg */; };
-		422845DB15933BBD002A4F3F /* mvimage1.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845DA15933BBD002A4F3F /* mvimage1.1.jpg */; };
 		4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917B1597D64E005DEACC /* neuro spinal.jpg */; };
 		4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917C1597D64E005DEACC /* Neuro Spine.jpg */; };
 		426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */; };
@@ -59,6 +56,8 @@
 		54B0B03915988DDF00068171 /* chronik.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B03815988DDF00068171 /* chronik.png */; };
 		54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */; };
 		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
+		54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0581599CD1F00068171 /* libsqlite3.dylib */; };
+		54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B05C1599CF4700068171 /* medicaldb02.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,9 +66,6 @@
 		422845CD15933BAC002A4F3F /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		422845CE15933BAC002A4F3F /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		422845CF15933BAC002A4F3F /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-		422845D615933BB6002A4F3F /* mvimage3.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage3.1.jpg; sourceTree = "<group>"; };
-		422845D815933BBA002A4F3F /* mvimage2.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage2.1.jpg; sourceTree = "<group>"; };
-		422845DA15933BBD002A4F3F /* mvimage1.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage1.1.jpg; sourceTree = "<group>"; };
 		4269917B1597D64E005DEACC /* neuro spinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro spinal.jpg"; sourceTree = "<group>"; };
 		4269917C1597D64E005DEACC /* Neuro Spine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neuro Spine.jpg"; sourceTree = "<group>"; };
 		426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeurospinewatermarkmasterviewViewController.h; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.h; sourceTree = "<group>"; };
@@ -129,6 +125,8 @@
 		54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
 		54B0B0451598A65600068171 /* tyxAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAboutViewController.h; sourceTree = "<group>"; };
 		54B0B0461598A65600068171 /* tyxAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAboutViewController.m; sourceTree = "<group>"; };
+		54B0B0581599CD1F00068171 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		54B0B05C1599CF4700068171 /* medicaldb02.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicaldb02.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */,
 				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
 				428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */,
 				428E25BA15877A52008BAA6F /* Foundation.framework in Frameworks */,
@@ -176,6 +175,7 @@
 		428E25B615877A52008BAA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B0581599CD1F00068171 /* libsqlite3.dylib */,
 				54B0B0331598836C00068171 /* QuickLook.framework */,
 				428E25B715877A52008BAA6F /* UIKit.framework */,
 				428E25B915877A52008BAA6F /* Foundation.framework */,
@@ -202,6 +202,7 @@
 		428E25BE15877A52008BAA6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B05C1599CF4700068171 /* medicaldb02.sqlite */,
 				42D4DBC51594769A0088609B /* images */,
 				428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */,
 				428E25C015877A52008BAA6F /* InfoPlist.strings */,
@@ -252,9 +253,9 @@
 		42D4DBC51594769A0088609B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B0611599E2E600068171 /* used images */,
 				54B0B03815988DDF00068171 /* chronik.png */,
 				4269917B1597D64E005DEACC /* neuro spinal.jpg */,
-				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
 				42D4DBE31595297A0088609B /* intranet_icon1.png */,
 				42D4DBE41595297A0088609B /* Intranet-icon2.png */,
 				42D4DBD9159526B00088609B /* calendar-icon1.jpg */,
@@ -272,19 +273,13 @@
 				42D4DBC81594773A0088609B /* patient3.jpg */,
 				42D4DBC91594773A0088609B /* patient4.jpg */,
 				42D4DBAF159470200088609B /* chronik.png */,
-				42D4DBB0159470200088609B /* GenericAppIcon.tif */,
-				42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */,
 				42D4DBB2159470200088609B /* patientpicture.png */,
-				42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */,
 				42D4DBB4159470200088609B /* XRay.png */,
 				422845CB15933BAC002A4F3F /* 1.jpg */,
 				422845CC15933BAC002A4F3F /* 2.jpg */,
 				422845CD15933BAC002A4F3F /* 3.jpg */,
 				422845CE15933BAC002A4F3F /* 4.jpg */,
 				422845CF15933BAC002A4F3F /* 5.jpg */,
-				422845DA15933BBD002A4F3F /* mvimage1.1.jpg */,
-				422845D815933BBA002A4F3F /* mvimage2.1.jpg */,
-				422845D615933BB6002A4F3F /* mvimage3.1.jpg */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -298,6 +293,17 @@
 				54B0B0461598A65600068171 /* tyxAboutViewController.m */,
 			);
 			name = SingleViews;
+			sourceTree = "<group>";
+		};
+		54B0B0611599E2E600068171 /* used images */ = {
+			isa = PBXGroup;
+			children = (
+				42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */,
+				42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */,
+				42D4DBB0159470200088609B /* GenericAppIcon.tif */,
+				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
+			);
+			name = "used images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,9 +364,6 @@
 				422845D215933BAC002A4F3F /* 3.jpg in Resources */,
 				422845D315933BAC002A4F3F /* 4.jpg in Resources */,
 				422845D415933BAC002A4F3F /* 5.jpg in Resources */,
-				422845D715933BB6002A4F3F /* mvimage3.1.jpg in Resources */,
-				422845D915933BBA002A4F3F /* mvimage2.1.jpg in Resources */,
-				422845DB15933BBD002A4F3F /* mvimage1.1.jpg in Resources */,
 				42D4DBB5159470200088609B /* chronik.png in Resources */,
 				42D4DBB6159470200088609B /* GenericAppIcon.tif in Resources */,
 				42D4DBB7159470200088609B /* neurospinecenter_logo.jpg in Resources */,
@@ -386,6 +389,7 @@
 				4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */,
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
 				54B0B03915988DDF00068171 /* chronik.png in Resources */,
+				54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

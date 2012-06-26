@@ -3,26 +3,23 @@
 //  TYX"
 //
 //  Created by LISComputer on 12.06.12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Techedge. All rights reserved.
 //
 
 #import "tyxMasterViewController.h"
 #import "tyxDetailViewController.h"
 
-@interface tyxMasterViewController () {
-    NSMutableArray *_objects;
-}
+@interface tyxMasterViewController () 
+//create a new property that can be used by other views
+@property NSMutableArray *wholePatientList;
 @end
 
 @implementation tyxMasterViewController
 
+@synthesize wholePatientList; //hold all patient records
 @synthesize detailViewController = _detailViewController;
-@synthesize mvimage = _mvimage;
-@synthesize mvimage3 = _mvimage3;
-@synthesize mvimage2 = _mvimage2;
-@synthesize mvimage4 = _mvimage4;
-@synthesize mvimage5 = _mvimage5;
 
+#pragma mark MasterView Controller
 - (void)awakeFromNib
 {
     self.clearsSelectionOnViewWillAppear = NO;
@@ -32,29 +29,53 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
     [super viewDidLoad];
-     self.mvimage.image = [UIImage imageNamed:@"1.jpg"];
-     self.mvimage2.image = [UIImage imageNamed:@"2.jpg"];
-     self.mvimage3.image = [UIImage imageNamed:@"3.jpg"];
-     self.mvimage4.image = [UIImage imageNamed:@"4.jpg"];
-     self.mvimage5.image = [UIImage imageNamed:@"5.jpg"];
-   
-     
-	// Do any additional setup after loading the view, typically from a nib.
-    /*self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //self.detailViewController = (tyxDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    
+    //create a dictionary for each section and adds them to the array wholePatientList
+    wholePatientList = [[NSMutableArray alloc] init];
+    
+    //set up databasePath
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    //get documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    //Build the path to database file
+    databasePath = [[NSString alloc] initWithString:[docsDir stringByAppendingPathComponent:@"medicaldb02.sqlite"]];
+    
+    const char *dbPath = [databasePath UTF8String];
+    sqlite3_stmt *statement;
+    
+    if (sqlite3_open(dbPath, &medicaldb)==SQLITE_OK) {
+        //create SQL statement
+        NSString *querySQL = [NSString stringWithFormat:@"SELECT * FROM tab_patient"];
+        const char *query_stmt = [querySQL UTF8String];
+        
+        //send SQL statement to database
+        if (sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL)==SQLITE_OK) {
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (tyxDetailViewController *)[self.splitViewController.viewControllers objectAtIndex:1];*/
+            NSMutableArray *sectionNumberArray = [NSMutableArray arrayWithObjects:@"", nil];
+            //fetch result of SQL statement
+            while (sqlite3_step(statement)==SQLITE_ROW) {
+                NSString *patientName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                [sectionNumberArray addObject:patientName];
+            }
+            NSLog(@"%@",sectionNumberArray);
+            NSDictionary *sectionNumberDictionary = [NSDictionary dictionaryWithObject:sectionNumberArray forKey:@"Patients"];
+            [wholePatientList addObject:sectionNumberDictionary];
+            sqlite3_finalize(statement);
+        }
+        sqlite3_close(medicaldb);
+    }
 }
 
 - (void)viewDidUnload
 {
-    [self setMvimage:nil];
-    [self setMvimage3:nil];
-    [self setMvimage2:nil];
-    [self setMvimage4:nil];
-    [self setMvimage5:nil];
     [super viewDidUnload];
    
     
@@ -74,60 +95,59 @@
         return NO;
     }  
 }
-/*
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
 
 #pragma mark - Table View
+#pragma mark - TableView Sections
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [wholePatientList count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    //returns number of rows in a section
+    NSDictionary *helperDictionary = [wholePatientList objectAtIndex:section];
+    NSArray *helperArray = [helperDictionary objectForKey:@"Patients"];
+    return 2;
+    //return [helperArray count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
-    return cell;
-}
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    if (section == 0) {
+        return @"Neurospine Center";
+    }
+    else {
+        return @"Eichhoffklinik";
     }
 }
-*/
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
 
+#pragma mark TableView Rows
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PatientCell"];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"PatientCell"];
+    }
+    
+    NSDictionary *dictionary = [wholePatientList objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"Patients"];
+    NSString *cellValue = [array objectAtIndex:indexPath.row];
+    //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
+    UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
+    patientnameTextfield.text = cellValue;
+    
+    UILabel *patientsurnameTextfield = (UILabel *) [cell viewWithTag:101];
+    patientsurnameTextfield.text = @"";
+    
+    UIImageView *patientpicture = (UIImageView *) [cell viewWithTag:102];
+    patientpicture.image = [UIImage imageNamed:@"patientpicture.png"];
+
+    return cell;
+}
 
 
 // Override to support conditional rearranging of the table view.
@@ -140,8 +160,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    self.detailViewController.detailItem = object;
+    //NSDate *object = [_objects objectAtIndex:indexPath.row];
+    //self.detailViewController.detailItem = object;
 }
-*/
+
 @end
