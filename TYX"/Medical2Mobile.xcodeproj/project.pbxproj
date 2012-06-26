@@ -15,6 +15,8 @@
 		422845D715933BB6002A4F3F /* mvimage3.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D615933BB6002A4F3F /* mvimage3.1.jpg */; };
 		422845D915933BBA002A4F3F /* mvimage2.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D815933BBA002A4F3F /* mvimage2.1.jpg */; };
 		422845DB15933BBD002A4F3F /* mvimage1.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845DA15933BBD002A4F3F /* mvimage1.1.jpg */; };
+		4263A8F7159906D600A1F215 /* TESinglesecDocumenteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4263A8F6159906D600A1F215 /* TESinglesecDocumenteViewController.m */; };
+		4263A8FE15990D5E00A1F215 /* PDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4263A8FD15990D5E00A1F215 /* PDF.pdf */; };
 		4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917B1597D64E005DEACC /* neuro spinal.jpg */; };
 		4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917C1597D64E005DEACC /* Neuro Spine.jpg */; };
 		426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */; };
@@ -55,6 +57,9 @@
 		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
+		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
+		54B0B03915988DDF00068171 /* chronik.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B03815988DDF00068171 /* chronik.png */; };
+		54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +71,9 @@
 		422845D615933BB6002A4F3F /* mvimage3.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage3.1.jpg; sourceTree = "<group>"; };
 		422845D815933BBA002A4F3F /* mvimage2.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage2.1.jpg; sourceTree = "<group>"; };
 		422845DA15933BBD002A4F3F /* mvimage1.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage1.1.jpg; sourceTree = "<group>"; };
+		4263A8F5159906D600A1F215 /* TESinglesecDocumenteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESinglesecDocumenteViewController.h; sourceTree = "<group>"; };
+		4263A8F6159906D600A1F215 /* TESinglesecDocumenteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESinglesecDocumenteViewController.m; sourceTree = "<group>"; };
+		4263A8FD15990D5E00A1F215 /* PDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PDF.pdf; sourceTree = "<group>"; };
 		4269917B1597D64E005DEACC /* neuro spinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro spinal.jpg"; sourceTree = "<group>"; };
 		4269917C1597D64E005DEACC /* Neuro Spine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neuro Spine.jpg"; sourceTree = "<group>"; };
 		426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeurospinewatermarkmasterviewViewController.h; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.h; sourceTree = "<group>"; };
@@ -74,10 +82,10 @@
 		428E25B715877A52008BAA6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		428E25B915877A52008BAA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		428E25BB15877A52008BAA6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
+		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
 		428E25C115877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		428E25C315877A52008BAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
+		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
 		428E25C615877A52008BAA6F /* tyxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxAppDelegate.h; sourceTree = "<group>"; };
 		428E25C715877A52008BAA6F /* tyxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxAppDelegate.m; sourceTree = "<group>"; };
 		428E25CA15877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -119,6 +127,10 @@
 		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
 		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
 		42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tyxthirddetailViewController.m; path = "Detail view/tyxthirddetailViewController.m"; sourceTree = "<group>"; };
+		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		54B0B03815988DDF00068171 /* chronik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronik.png; sourceTree = "<group>"; };
+		54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
+		54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
 				428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */,
 				428E25BA15877A52008BAA6F /* Foundation.framework in Frameworks */,
 				428E25BC15877A52008BAA6F /* CoreGraphics.framework in Frameworks */,
@@ -165,6 +178,7 @@
 		428E25B615877A52008BAA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54B0B0331598836C00068171 /* QuickLook.framework */,
 				428E25B715877A52008BAA6F /* UIKit.framework */,
 				428E25B915877A52008BAA6F /* Foundation.framework */,
 				428E25BB15877A52008BAA6F /* CoreGraphics.framework */,
@@ -223,6 +237,10 @@
 				428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */,
 				42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */,
 				42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */,
+				54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */,
+				54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */,
+				4263A8F5159906D600A1F215 /* TESinglesecDocumenteViewController.h */,
+				4263A8F6159906D600A1F215 /* TESinglesecDocumenteViewController.m */,
 			);
 			name = splitView;
 			sourceTree = "<group>";
@@ -239,6 +257,8 @@
 		42D4DBC51594769A0088609B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4263A8FD15990D5E00A1F215 /* PDF.pdf */,
+				54B0B03815988DDF00068171 /* chronik.png */,
 				4269917B1597D64E005DEACC /* neuro spinal.jpg */,
 				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
 				42D4DBE31595297A0088609B /* intranet_icon1.png */,
@@ -360,6 +380,8 @@
 				42D4DBE61595297B0088609B /* Intranet-icon2.png in Resources */,
 				4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */,
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
+				54B0B03915988DDF00068171 /* chronik.png in Resources */,
+				4263A8FE15990D5E00A1F215 /* PDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +403,8 @@
 				42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */,
 				42D4DBC4159474450088609B /* userselectionViewController.m in Sources */,
 				426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */,
+				54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */,
+				4263A8F7159906D600A1F215 /* TESinglesecDocumenteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
