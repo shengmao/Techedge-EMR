@@ -835,11 +835,10 @@
                         <segue destination="1Zg-NR-CvY" kind="replace" identifier="Vitalwerte" splitViewControllerTargetIndex="1" id="hn2-Vz-KPR"/>
                         <segue destination="WHn-l2-ozP" kind="replace" identifier="Labor" splitViewControllerTargetIndex="1" id="2rQ-bp-aa2"/>
                         <segue destination="kJU-eB-pYA" kind="replace" identifier="EMR Info" splitViewControllerTargetIndex="1" id="BpO-0S-ief"/>
+                        <segue destination="ehe-br-q2Z" kind="replace" identifier="Dokumente" splitViewControllerTargetIndex="1" id="heL-MV-9iB"/>
                         <segue destination="6OI-k7-v1Z" kind="replace" identifier="Diagnostik" splitViewControllerTargetIndex="1" id="MTa-Tz-Ihr"/>
                         <segue destination="Q9x-mh-mOb" kind="replace" identifier="Chronik" splitViewControllerTargetIndex="1" id="gp2-7h-fxf"/>
                         <segue destination="oe7-2i-lcW" kind="replace" identifier="klinische Aufträge" splitViewControllerTargetIndex="1" id="B2D-Xu-fDT"/>
-                        <segue destination="71S-DE-qbh" kind="replace" identifier="Dokumente" splitViewControllerTargetIndex="1" id="Mus-V8-jMq"/>
-                        <segue destination="ehe-br-q2Z" kind="replace" splitViewControllerTargetIndex="1" id="6lB-3I-A7K"/>
                     </connections>
                 </viewController>
             </objects>
@@ -1943,7 +1942,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="138" y="2706"/>
+            <point key="canvasLocation" x="250" y="3054"/>
         </scene>
         <!--Tyx Detail View Controller - Chronik-->
         <scene sceneID="Kvq-7Z-Tua">
@@ -2163,7 +2162,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1276" y="-960"/>
+            <point key="canvasLocation" x="992" y="-938"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezn-xq-r3D">
@@ -2237,7 +2236,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2362" y="-1094"/>
+            <point key="canvasLocation" x="1794" y="-938"/>
         </scene>
         <!--Table View Controller - klinische Aufträge-->
         <scene sceneID="kfR-Y6-tNL">
@@ -2512,7 +2511,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="250" y="-934"/>
+            <point key="canvasLocation" x="154" y="-944"/>
         </scene>
         <!--Tyxnew Detail View Controller-->
         <scene sceneID="dhM-Wr-GZn">
@@ -3133,10 +3132,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWO-cl-pga" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="ehe-br-q2Z" customClass="TESingleDocumentListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="k10-j0-yOB">
-                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <nil key="simulatedOrientationMetrics"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="0mx-4w-Itt">
                                 <rect key="frame" x="0.0" y="22" width="703" height="44"/>
@@ -3159,7 +3158,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1389" y="2553"/>
+            <point key="canvasLocation" x="1445" y="1821"/>
         </scene>
         <!--View Controller - Labor-->
         <scene sceneID="DsE-RZ-XIG">
@@ -3185,7 +3184,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="185" y="917"/>
+            <point key="canvasLocation" x="170" y="925"/>
         </scene>
         <!--View Controller - Virtalwerte-->
         <scene sceneID="aci-Zf-KAh">
@@ -3211,37 +3210,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1529" y="855"/>
-        </scene>
-        <!--Internalpdf View Controller-->
-        <scene sceneID="ymr-Yc-aQE">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SRI-Ga-sQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="71S-DE-qbh" customClass="internalpdfViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vHM-IW-jR1">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Nx6-xm-WS9">
-                                <rect key="frame" x="0.0" y="22" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="71S-DE-qbh" id="0P9-VX-6AZ"/>
-                            <outlet property="delegate" destination="71S-DE-qbh" id="dBc-tH-lVP"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="1545" y="2005"/>
+            <point key="canvasLocation" x="1049" y="915"/>
         </scene>
     </scenes>
     <resources>
@@ -3255,82 +3224,6 @@
         <image name="patient1.jpg" width="512" height="512"/>
         <image name="patient4.jpg" width="256" height="256"/>
     </resources>
-    <classes>
-        <class className="NeurospinewatermarkmasterviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeurospinewatermarkmasterviewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="usertabs" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TESingleDocumentListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TESingleDocumentListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="FileListTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="internalpdfViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/internalpdfViewController.h"/>
-        </class>
-        <class className="tyxAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="versionNumber" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxMasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mvimage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage5" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxloginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxloginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="establishConnection:"/>
-                <relationship kind="outlet" name="companyLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="customerLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="passwortTextfield" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameTextfield" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tyxnewDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxnewDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dvimage1" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxsecdetaiViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecdetaiViewController.h"/>
-        </class>
-        <class className="tyxsecmasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecmasterViewController.h"/>
-        </class>
-        <class className="tyxthirddetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxthirddetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Eclipse" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="userselectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/userselectionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Intranetview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="calenderview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="emailview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="patientview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
