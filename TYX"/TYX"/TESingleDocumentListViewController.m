@@ -35,8 +35,6 @@
     
     //set up data for table view
     fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview", nil];
-    NSLog(@"%@",fileNameList);
-    
 }
 
 - (void)viewDidUnload

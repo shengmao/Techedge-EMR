@@ -58,6 +58,7 @@
 		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
 		54B0B03915988DDF00068171 /* chronik.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B03815988DDF00068171 /* chronik.png */; };
 		54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */; };
+		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,8 @@
 		54B0B03815988DDF00068171 /* chronik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronik.png; sourceTree = "<group>"; };
 		54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
 		54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
+		54B0B0451598A65600068171 /* tyxAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAboutViewController.h; sourceTree = "<group>"; };
+		54B0B0461598A65600068171 /* tyxAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,8 +235,7 @@
 				428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */,
 				42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */,
 				42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */,
-				54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */,
-				54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */,
+				54B0B0441598A64000068171 /* SingleViews */,
 			);
 			name = splitView;
 			sourceTree = "<group>";
@@ -285,6 +287,17 @@
 				422845D615933BB6002A4F3F /* mvimage3.1.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		54B0B0441598A64000068171 /* SingleViews */ = {
+			isa = PBXGroup;
+			children = (
+				54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */,
+				54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */,
+				54B0B0451598A65600068171 /* tyxAboutViewController.h */,
+				54B0B0461598A65600068171 /* tyxAboutViewController.m */,
+			);
+			name = SingleViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +408,7 @@
 				42D4DBC4159474450088609B /* userselectionViewController.m in Sources */,
 				426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */,
 				54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */,
+				54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
