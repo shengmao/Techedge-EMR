@@ -1,19 +1,18 @@
 //
-//  TESinglesecDocumenteViewController.m
+//  internalpdfViewController.m
 //  Medical2Mobile
 //
-//  Created by LISComputer on 25.06.12.
+//  Created by LISComputer on 26.06.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "TESinglesecDocumenteViewController.h"
+#import "internalpdfViewController.h"
 
-@interface TESinglesecDocumenteViewController ()
+@interface internalpdfViewController ()
 
 @end
 
-@implementation TESinglesecDocumenteViewController
-
+@implementation internalpdfViewController
 @synthesize pdfURL;
 @synthesize pdfPath;
 
@@ -69,9 +68,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.row == 0) {
-            //pdfURL = [NSURL URLWithString:pdfPath];
-            pdfURL = [NSURL fileURLWithPath: pdfPath];       
-    
+        //pdfURL = [NSURL URLWithString:pdfPath];
+        pdfURL = [NSURL fileURLWithPath: pdfPath];       
+        
     }
     
     //creating object of QLPreviewController
@@ -102,3 +101,5 @@
 }
 
 @end
+
+

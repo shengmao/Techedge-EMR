@@ -30,13 +30,11 @@
     [super viewDidLoad];
     
     //read document directory from the application
-   NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+//    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 //    NSLog(@"%@",path);
     
     //set up data for table view
     fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview", nil];
-    NSLog(@"%@",fileNameList);
-    
 }
 
 - (void)viewDidUnload

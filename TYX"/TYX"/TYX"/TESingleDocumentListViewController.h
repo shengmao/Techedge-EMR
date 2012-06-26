@@ -12,7 +12,7 @@
 @interface TESingleDocumentListViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource, QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 {
     NSArray *fileNameList;
-    //IBOutlet UITableView *FileListTableView;
+    IBOutlet UITableView *FileListTableView;
     NSURL *fileURL;
 }
 
