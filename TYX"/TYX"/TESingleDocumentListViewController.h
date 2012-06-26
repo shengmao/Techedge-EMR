@@ -19,5 +19,7 @@
 @property (nonatomic, retain) NSURL *fileURL;
 @property (nonatomic, retain) UITableView *FileListTableView;
 @property (nonatomic, retain) NSString *pdfPath;
+@property (nonatomic, retain) NSString *imagePath;
+@property (nonatomic, retain) NSString *bildPath;
 
 @end

@@ -18,6 +18,9 @@
 @synthesize FileListTableView;
 @synthesize fileURL;
 @synthesize pdfPath;
+@synthesize imagePath;
+@synthesize bildPath;
+
 
 #define kStringURLViewControllerPDF @"https://developer.apple.com/library/ios/DOCUMENTATION/NetworkingInternet/Reference/QLPreviewController_Class/QLPreviewController_Class.pdf"
 
@@ -35,10 +38,13 @@
 //    NSLog(@"%@",path);
     
     //set up data for table view
-    fileNameList = [[NSArray alloc] initWithObjects:@"Bild",@"UIViewController", @"QLPreview",@"localPDF", nil];
+    fileNameList = [[NSArray alloc] initWithObjects:@"Intranet",@"Neuro SPine", @"QLPreview",@"localPDF", nil];
     
 	//set up pdfpath
     pdfPath = [[NSBundle mainBundle] pathForResource:@"PDF" ofType:@"pdf"];
+    imagePath = [[NSBundle mainBundle] pathForResource:@"Neuro Spine" ofType:@"jpg"];
+    bildPath = [[NSBundle mainBundle] pathForResource:@"intranet_icon1" ofType:@"png"];
+
 }
 
 - (void)viewDidUnload
@@ -129,15 +135,17 @@
 {
     switch (indexPath.row) {
         case 0:
-            fileURL = [NSURL URLWithString:kStringURLViewControllerPDF];
+            fileURL = [NSURL fileURLWithPath:bildPath];
             break;
         case 1:
-            fileURL = [NSURL URLWithString:kStringURLQLPreviewControllerPDF];
+            fileURL = [NSURL fileURLWithPath:imagePath];
+            break;
         case 2:
             fileURL = [NSURL URLWithString:kStringURLUIDocumentInteractionControllerPDF];
             break;
         case 3:
             fileURL = [NSURL fileURLWithPath:pdfPath];
+            break;
     }
     
     //creating object of QLPreviewController
