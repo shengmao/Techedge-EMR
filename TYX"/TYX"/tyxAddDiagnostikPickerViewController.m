@@ -54,6 +54,11 @@
 #pragma mark PickerView Handling
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    NSLog(@"Selected Color: %@. Index of selected color: %i", [activitytype objectAtIndex:row], row);
+    NSLog(@"Selected: %@. Index of selected: %i", [activitytype objectAtIndex:row], row);
+}
+#pragma mark saveData
+- (IBAction)saveDiagnostic:(id)sender 
+{
+    NSLog(@"Code for saving data goes here.");
 }
 @end

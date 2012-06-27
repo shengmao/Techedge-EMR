@@ -65,7 +65,7 @@
                 NSString *patientName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
                 [sectionNumberArray addObject:patientName];
             }
-            NSLog(@"%@",sectionNumberArray);
+            
             NSDictionary *sectionNumberDictionary = [NSDictionary dictionaryWithObject:sectionNumberArray forKey:@"Patients"];
             [wholePatientList addObject:sectionNumberDictionary];
             sqlite3_finalize(statement);
@@ -135,7 +135,6 @@
     NSDictionary *dictionary = [wholePatientList objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"Patients"];
     NSString *cellValue = [array objectAtIndex:indexPath.row];
-    NSLog(@"%@", cellValue);
     //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
     UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
     patientnameTextfield.text = cellValue;

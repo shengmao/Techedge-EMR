@@ -13,4 +13,5 @@
    IBOutlet UIPickerView *activitytypePicker;
 }
 @property NSMutableArray *activitytype;
+- (IBAction)saveDiagnostic:(id)sender;
 @end
