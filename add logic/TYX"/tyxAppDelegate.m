@@ -30,9 +30,6 @@
     UINavigationController *navigationController= tyxloginViewController.navigationController;
     UISplitViewController *splitviewController = (UISplitViewController *) [navigationController.viewControllers objectAtIndex:0];
     splitviewController.delegate =(id)[splitviewController.viewControllers objectAtIndex:1];
-
-    //UINavigationController *secnavigationController = [splitviewController.viewControllers objectAtIndex:1];
-    //splitviewController.delegate = (id)secnavigationController.topViewController;
     
     return YES;
 }
