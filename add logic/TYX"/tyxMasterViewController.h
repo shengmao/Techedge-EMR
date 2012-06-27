@@ -12,7 +12,6 @@
 @class tyxDetailViewController;
 
 @interface tyxMasterViewController : UITableViewController
-
 {
     sqlite3 *medicaldb;
     NSString *databasePath;
