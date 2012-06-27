@@ -65,7 +65,7 @@
                 NSString *patientChronik = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 7)];
                 [sectionNumberArray addObject:patientChronik];
             }
-            NSLog(@"%@",sectionNumberArray);
+            
             NSDictionary *sectionNumberDictionary = [NSDictionary dictionaryWithObject:sectionNumberArray forKey:@"Chronik"];
             [wholeChronikList addObject:sectionNumberDictionary];
             sqlite3_finalize(statement);
@@ -128,8 +128,6 @@
     NSDictionary *dictionary = [wholeChronikList objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"Chronik"];
     NSString *cellValue = [array objectAtIndex:indexPath.row];
-    NSLog(@"Hallo");
-    NSLog(@"%@", cellValue);
     
     //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
     UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];

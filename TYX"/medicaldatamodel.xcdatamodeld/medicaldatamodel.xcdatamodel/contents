@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ActivityType" syncable="YES">
+        <attribute name="longdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortdescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Address" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postalcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patient" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="adress" inverseEntity="Patient" syncable="YES"/>
+    </entity>
+    <entity name="ClinicLocation" syncable="YES">
+        <attribute name="clinicname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Document" syncable="YES">
+        <attribute name="documentname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="documentType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortdescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Patient" syncable="YES">
+        <attribute name="birthdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobilephone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="adress" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Address" inverseName="patient" inverseEntity="Address" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Patient" positionX="-441" positionY="-72" width="216" height="150"/>
+        <element name="Address" positionX="-585" positionY="-261" width="128" height="120"/>
+        <element name="ActivityType" positionX="63" positionY="-207" width="128" height="75"/>
+        <element name="Document" positionX="-218" positionY="-261" width="128" height="90"/>
+        <element name="ClinicLocation" positionX="-225" positionY="-72" width="128" height="60"/>
+    </elements>
+</model>
