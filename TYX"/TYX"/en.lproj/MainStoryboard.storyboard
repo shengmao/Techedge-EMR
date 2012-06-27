@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="hgJ-NQ-mHg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D2001" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="hgJ-NQ-mHg">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -1966,7 +1966,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1752" y="5357"/>
+            <point key="canvasLocation" x="2508" y="-1835"/>
         </scene>
         <!--Table View Controller - Diagnostik-->
         <scene sceneID="wrH-hE-ubm">
@@ -1974,7 +1974,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqe-7y-oFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="qPI-JL-rxg" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LhY-61-uDL">
-                        <rect key="frame" x="0.0" y="64" width="703" height="660"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="660"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -2170,7 +2170,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5z-lf-Cd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="8JW-Co-fRR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zjt-4g-8GU">
-                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <rect key="frame" x="0.0" y="44" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" id="4vX-rP-Bes">
@@ -2244,7 +2244,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4i-if-LAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="xm3-5K-te8" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XZA-i3-fWW">
-                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -2377,7 +2377,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5o-h7-fGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Q9x-mh-mOb" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="iJq-gH-AFZ">
-                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -3158,7 +3158,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="261" y="2509"/>
+            <point key="canvasLocation" x="1445" y="1821"/>
         </scene>
         <!--View Controller - Labor-->
         <scene sceneID="DsE-RZ-XIG">
@@ -3210,7 +3210,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="969" y="971"/>
+            <point key="canvasLocation" x="1049" y="915"/>
         </scene>
     </scenes>
     <resources>
@@ -3224,79 +3224,6 @@
         <image name="patient1.jpg" width="512" height="512"/>
         <image name="patient4.jpg" width="256" height="256"/>
     </resources>
-    <classes>
-        <class className="NeurospinewatermarkmasterviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeurospinewatermarkmasterviewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="usertabs" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TESingleDocumentListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TESingleDocumentListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="FileListTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="tyxAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="versionNumber" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxMasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mvimage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage3" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage4" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mvimage5" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxloginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxloginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="establishConnection:"/>
-                <relationship kind="outlet" name="companyLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="customerLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="passwortTextfield" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameTextfield" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tyxnewDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxnewDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dvimage1" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxsecdetaiViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecdetaiViewController.h"/>
-        </class>
-        <class className="tyxsecmasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecmasterViewController.h"/>
-        </class>
-        <class className="tyxthirddetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxthirddetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Eclipse" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="userselectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/userselectionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Intranetview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="calenderview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="emailview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="patientview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

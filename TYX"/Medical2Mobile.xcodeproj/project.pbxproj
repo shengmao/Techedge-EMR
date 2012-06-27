@@ -15,7 +15,8 @@
 		422845D715933BB6002A4F3F /* mvimage3.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D615933BB6002A4F3F /* mvimage3.1.jpg */; };
 		422845D915933BBA002A4F3F /* mvimage2.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845D815933BBA002A4F3F /* mvimage2.1.jpg */; };
 		422845DB15933BBD002A4F3F /* mvimage1.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 422845DA15933BBD002A4F3F /* mvimage1.1.jpg */; };
-		4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917B1597D64E005DEACC /* neuro spinal.jpg */; };
+		423319531599DAA000DFAB69 /* PDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 423319521599DAA000DFAB69 /* PDF.pdf */; };
+		4269917D1597D64E005DEACC /* neuro spinal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269917B1597D64E005DEACC /* neuro spinal.png */; };
 		4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917C1597D64E005DEACC /* Neuro Spine.jpg */; };
 		426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */; };
 		428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E25B715877A52008BAA6F /* UIKit.framework */; };
@@ -70,7 +71,8 @@
 		422845D615933BB6002A4F3F /* mvimage3.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage3.1.jpg; sourceTree = "<group>"; };
 		422845D815933BBA002A4F3F /* mvimage2.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage2.1.jpg; sourceTree = "<group>"; };
 		422845DA15933BBD002A4F3F /* mvimage1.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvimage1.1.jpg; sourceTree = "<group>"; };
-		4269917B1597D64E005DEACC /* neuro spinal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neuro spinal.jpg"; sourceTree = "<group>"; };
+		423319521599DAA000DFAB69 /* PDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PDF.pdf; sourceTree = "<group>"; };
+		4269917B1597D64E005DEACC /* neuro spinal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "neuro spinal.png"; sourceTree = "<group>"; };
 		4269917C1597D64E005DEACC /* Neuro Spine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neuro Spine.jpg"; sourceTree = "<group>"; };
 		426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeurospinewatermarkmasterviewViewController.h; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.h; sourceTree = "<group>"; };
 		426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeurospinewatermarkmasterviewViewController.m; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.m; sourceTree = "<group>"; };
@@ -252,8 +254,9 @@
 		42D4DBC51594769A0088609B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				423319521599DAA000DFAB69 /* PDF.pdf */,
 				54B0B03815988DDF00068171 /* chronik.png */,
-				4269917B1597D64E005DEACC /* neuro spinal.jpg */,
+				4269917B1597D64E005DEACC /* neuro spinal.png */,
 				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
 				42D4DBE31595297A0088609B /* intranet_icon1.png */,
 				42D4DBE41595297A0088609B /* Intranet-icon2.png */,
@@ -383,9 +386,10 @@
 				42D4DBE2159526B10088609B /* calender-icon5.jpg in Resources */,
 				42D4DBE51595297B0088609B /* intranet_icon1.png in Resources */,
 				42D4DBE61595297B0088609B /* Intranet-icon2.png in Resources */,
-				4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */,
+				4269917D1597D64E005DEACC /* neuro spinal.png in Resources */,
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
 				54B0B03915988DDF00068171 /* chronik.png in Resources */,
+				423319531599DAA000DFAB69 /* PDF.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
