@@ -300,7 +300,7 @@
                     </connections>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="379" y="737"/>
+            <point key="canvasLocation" x="315" y="-563"/>
         </scene>
         <!--Split View Controller - Übersicht-->
         <scene sceneID="18">
@@ -324,7 +324,7 @@
                     </connections>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="-2336" y="-195"/>
+            <point key="canvasLocation" x="-2344" y="-579"/>
         </scene>
         <!--Tyx Master View Controller - Patients-->
         <scene sceneID="24">
@@ -385,7 +385,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-2369" y="718"/>
+            <point key="canvasLocation" x="-2377" y="334"/>
         </scene>
         <!--Tyxnew Detail View Controller-->
         <scene sceneID="BwK-wY-Vgm">
@@ -597,7 +597,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-872" y="730"/>
+            <point key="canvasLocation" x="-1024" y="-102"/>
         </scene>
         <!--Neurospinewatermarkmasterview View Controller-->
         <scene sceneID="S1F-WK-SPS">
@@ -664,7 +664,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="429" y="1708"/>
+            <point key="canvasLocation" x="277" y="392"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O71-95-2rZ">
@@ -823,11 +823,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="kkF-2w-ePC">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="0zV-I0-6kd">
-                            <connections>
-                                <segue destination="hgJ-NQ-mHg" kind="modal" id="vmR-hS-Gr2"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="0zV-I0-6kd"/>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -835,7 +831,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-5094" y="1767"/>
+            <point key="canvasLocation" x="-5598" y="5895"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="USV-q8-tTU">
@@ -847,12 +843,9 @@
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Qhz-G5-LAU">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="5" kind="relationship" relationship="rootViewController" id="T0g-qp-O1h"/>
-                    </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-3772" y="-1123"/>
+            <point key="canvasLocation" x="-4492" y="5869"/>
         </scene>
         <!--Tyxlogin View Controller-->
         <scene sceneID="ji8-Rt-rJB">
@@ -1309,7 +1302,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-1991" y="718"/>
+            <point key="canvasLocation" x="-1999" y="334"/>
         </scene>
         <!--Tyxthirddetail View Controller - Anamnese-->
         <scene sceneID="OQO-9n-nfj">
@@ -2121,7 +2114,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4092" y="-872"/>
+            <point key="canvasLocation" x="3628" y="-744"/>
         </scene>
         <!--Table View Controller - klinische Aufträge-->
         <scene sceneID="kfR-Y6-tNL">
@@ -2538,7 +2531,7 @@
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="834" y="1708"/>
+            <point key="canvasLocation" x="682" y="392"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="G0k-32-UAk">
@@ -3027,89 +3020,12 @@
         <image name="patient1.jpg" width="512" height="512"/>
         <image name="patientpicture.png" width="380" height="380"/>
     </resources>
-    <classes>
-        <class className="NeurospinewatermarkmasterviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeurospinewatermarkmasterviewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="usertabs" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TESingleDocumentListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TESingleDocumentListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="FileListTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="tyxAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="versionNumber" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxAddDiagnostikPickerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAddDiagnostikPickerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="saveDiagnostic:"/>
-                <relationship kind="outlet" name="activitytypePicker" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="tyxDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxMasterViewController.h"/>
-        </class>
-        <class className="tyxSingleChronikViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxSingleChronikViewController.h"/>
-        </class>
-        <class className="tyxloginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxloginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="establishConnection:"/>
-                <relationship kind="outlet" name="companyLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="customerLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="passwortTextfield" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameTextfield" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tyxnewDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxnewDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dvimage1" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxsecdetaiViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecdetaiViewController.h"/>
-        </class>
-        <class className="tyxsecmasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecmasterViewController.h"/>
-        </class>
-        <class className="tyxthirddetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxthirddetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Eclipse" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="userselectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/userselectionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Intranetview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="calenderview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="emailview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="patientview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="leS-xM-Iu0"/>
-        <segue reference="pnP-up-Sjq"/>
+        <segue reference="kyt-mX-A13"/>
     </inferredMetricsTieBreakers>
 </document>

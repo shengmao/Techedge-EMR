@@ -62,7 +62,8 @@
             NSMutableArray *sectionNumberArray = [NSMutableArray arrayWithObjects: nil];
             //fetch result of SQL statement
             while (sqlite3_step(statement)==SQLITE_ROW) {
-                NSString *patientChronik = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 7)];
+                //read column and add to an array
+                NSMutableString *patientChronik = [[NSMutableString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 7)];
                 [sectionNumberArray addObject:patientChronik];
             }
             
