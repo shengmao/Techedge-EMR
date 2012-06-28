@@ -7,12 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
-@interface tyxloginViewController : UIViewController
+@interface tyxloginViewController : UIViewController 
+{
+    sqlite3 *medicaldb;
+    NSString *databasePath;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *customerLogo;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextfield;
 @property (weak, nonatomic) IBOutlet UITextField *passwortTextfield;
 @property (weak, nonatomic) IBOutlet UIImageView *companyLogo;
+
 - (IBAction)establishConnection:(id)sender;
 
 
