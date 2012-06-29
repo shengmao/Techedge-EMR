@@ -11,6 +11,10 @@
 @interface tyxAddDiagnostikPickerViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 {
    IBOutlet UIPickerView *activitytypePicker;
+    IBOutlet UILabel *selectedPickerRow;
+    IBOutlet UITextField *choosenDiagnosticNumber;
+    IBOutlet UITextField *shortDescription;
+    IBOutlet UITextView *longDescription;
 }
 @property NSMutableArray *activitytype;
 - (IBAction)saveDiagnostic:(id)sender;

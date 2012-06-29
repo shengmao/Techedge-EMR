@@ -32,6 +32,10 @@
 
 - (void)viewDidUnload {
     activitytypePicker = nil;
+    selectedPickerRow = nil;
+    choosenDiagnosticNumber = nil;
+    shortDescription = nil;
+    longDescription = nil;
     [super viewDidUnload];
 }
 
