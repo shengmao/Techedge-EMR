@@ -13,6 +13,8 @@
 //create a new property that can be used by other views
 @property NSMutableArray *wholePatientList1;
 @property NSMutableArray *wholePatientList2;
+@property UIImage *dbpatientimage;
+
 
 @end
 
@@ -20,6 +22,7 @@
 
 @synthesize wholePatientList1; //hold all patient records
 @synthesize wholePatientList2; //hold all patient records
+@synthesize dbpatientimage;
 
 @synthesize detailViewController = _detailViewController;
 
@@ -41,7 +44,7 @@
     //create a dictionary for each section and adds them to the array wholePatientList
     wholePatientList1 = [[NSMutableArray alloc] init];
     wholePatientList2 = [[NSMutableArray alloc] init];
-
+    
     
     //set up databasePath
     NSString *docsDir;
@@ -59,43 +62,53 @@
     
     if (sqlite3_open(dbPath, &medicaldb)==SQLITE_OK) {
         //create SQL statement
-        NSString *querySQL = [NSString stringWithFormat:@"SELECT * FROM tab_patient"];
+        NSString *querySQL = [NSString stringWithFormat:@"SELECT surname, name, stationroom, picture FROM tab_patient"];
         const char *query_stmt = [querySQL UTF8String];
         
         //send SQL statement to database
         if (sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL)==SQLITE_OK) {
-
+            
             //fetch result of SQL statement
             while (sqlite3_step(statement)==SQLITE_ROW) {
                 
-                NSString *patientsurName = [[NSString alloc] initWithUTF8String:(const char *)sqlite3_column_text(statement, 1)];
+                NSString *patientsurName = [[NSString alloc] initWithUTF8String:(const char *)sqlite3_column_text(statement, 0)];
                 
-                NSString *patientName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
+                NSString *patientfName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 1)];
                 
-                NSString *idpatient = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 3)];
-                [idpatient intValue];
-               
-                NSLog(@"untill now it is ok 1");
+                NSString *patientName = [[NSString alloc] init];
+                patientName = [patientName stringByAppendingString:patientsurName];
+                patientName = [patientName stringByAppendingString:@" "];
+                patientName = [patientName stringByAppendingString:patientfName];
+                NSString *stationRoom = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];               
+                
+                NSData *data = [[NSData alloc] initWithBytes:sqlite3_column_blob(statement, 3) length:sqlite3_column_bytes(statement, 3)];
+                if(data == nil)
+                {
+                    dbpatientimage = [UIImage imageNamed:@"patientpicture.png"];
+                }
+                else
+                {
+                    dbpatientimage =[UIImage imageWithData:data]; 
+                }               
+                
                 
                 //check the idpatient value(used for section determination later), and then firstly create two corresponding NSarray to hold the column values from database, secondly create NSMutableDictionary to hold the NSArray, and thirdly create NSMutablearray(wholepatientlist1, wholepatientlist2) to store the corresponding NSMutabledictionary
-                if([idpatient intValue] == 1)
+                //if(idpatient == 1)
+                if ([stationRoom intValue] == 1)
                 {
-                    NSArray  *sectionNumberArray1 = [NSArray arrayWithObjects:patientsurName, patientName, idpatient, nil ];
+                    NSArray  *sectionNumberArray1 = [NSArray arrayWithObjects:patientName, stationRoom,dbpatientimage, nil ];
                     NSMutableDictionary *sectionNumberDictionary1 = [NSMutableDictionary dictionaryWithObject:sectionNumberArray1 forKey:@"Patients"];
                     [wholePatientList1 addObject: sectionNumberDictionary1];
-                    
-                    NSLog(@"%@", sectionNumberArray1);
-
                 }
                 else {
-                    NSArray  *sectionNumberArray2 = [NSArray arrayWithObjects:patientsurName, patientName, idpatient, nil ];
-                     NSMutableDictionary *sectionNumberDictionary2 = [NSMutableDictionary dictionaryWithObject:sectionNumberArray2 forKey:@"Patients"];
+                    NSArray  *sectionNumberArray2 = [NSArray arrayWithObjects:patientName, stationRoom,dbpatientimage, nil ];
+                    NSMutableDictionary *sectionNumberDictionary2 = [NSMutableDictionary dictionaryWithObject:sectionNumberArray2 forKey:@"Patients"];
                     [wholePatientList2 addObject: sectionNumberDictionary2];
-
+                    
                 }
-              
+                
                 //[sectionNumberDictionary setObject:sectionNumberArray forKey:@"patient"];
-               
+                
                 
                 
                 //release sectionNumberArray and sectionNumberDictionary
@@ -109,7 +122,7 @@
             //NSMutableDictionary *sectionNumberDictionary = [NSMutableDictionary dictionaryWithObject:sectionNumberArray forKey:@"Patients"];
             //[wholePatientList addObject:sectionNumberDictionary];
             sqlite3_finalize(statement);
-
+            
         }
         sqlite3_close(medicaldb);
     }
@@ -118,7 +131,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-   
+    
     
     // Release any retained subviews of the main view.
 }
@@ -201,19 +214,19 @@
     else {
         NSMutableDictionary *dictionary = [wholePatientList2 objectAtIndex:indexPath.row];
         array = [dictionary objectForKey:@"Patients"];
-
+        
     }
     NSLog(@"%@",[array objectAtIndex:1]);
     
-    UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
-    patientnameTextfield.text = [array objectAtIndex:1];
+    UILabel *patientNameTextfield = (UILabel *)[cell viewWithTag:100];
+    patientNameTextfield.text = [array objectAtIndex:0];
     
-    UILabel *patientsurnameTextfield = (UILabel *) [cell viewWithTag:101];
-    patientsurnameTextfield.text = [array objectAtIndex:0];
+    UILabel *stationRoomTextfield = (UILabel *) [cell viewWithTag:101];
+    stationRoomTextfield.text = [array objectAtIndex:1];
     
     UIImageView *patientpicture = (UIImageView *) [cell viewWithTag:102];
-    patientpicture.image = [UIImage imageNamed:@"patientpicture.png"];
-    
+    //patientpicture.image = [UIImage imageNamed:@"patientpicture.png"];
+    patientpicture.image = [array objectAtIndex:2];
     
     
     

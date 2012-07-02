@@ -52,12 +52,14 @@
 		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
-		548DE335159A3E2700757334 /* grey_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 548DE334159A3E2700757334 /* grey_background.png */; };
 		5494AEBF159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */; };
+		5494AF1E15A1AFA500ED0801 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */; };
+		5494AF2015A1B13200ED0801 /* knee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5494AF1F15A1B13200ED0801 /* knee.jpg */; };
+		5494AF2215A1B8D500ED0801 /* grey_background_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 5494AF2115A1B8D500ED0801 /* grey_background_texture.png */; };
+		5494AF2415A1BD0500ED0801 /* grey_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5494AF2315A1BD0500ED0801 /* grey_background.png */; };
 		54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */; };
 		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
 		54B0B03915988DDF00068171 /* chronik.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B03815988DDF00068171 /* chronik.png */; };
-		54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */; };
 		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
 		54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0581599CD1F00068171 /* libsqlite3.dylib */; };
 		54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B05C1599CF4700068171 /* medicaldb02.sqlite */; };
@@ -123,14 +125,16 @@
 		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
 		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
 		42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tyxthirddetailViewController.m; path = "Detail view/tyxthirddetailViewController.m"; sourceTree = "<group>"; };
-		548DE334159A3E2700757334 /* grey_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_background.png; sourceTree = "<group>"; };
 		5494AEBD159F905000ED0801 /* tyxAddDiagnostikPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAddDiagnostikPickerViewController.h; sourceTree = "<group>"; };
 		5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAddDiagnostikPickerViewController.m; sourceTree = "<group>"; };
+		5494AF1C15A1AFA500ED0801 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TESingleDocumentListViewController.h; path = ../TESingleDocumentListViewController.h; sourceTree = "<group>"; };
+		5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TESingleDocumentListViewController.m; path = ../TESingleDocumentListViewController.m; sourceTree = "<group>"; };
+		5494AF1F15A1B13200ED0801 /* knee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = knee.jpg; sourceTree = "<group>"; };
+		5494AF2115A1B8D500ED0801 /* grey_background_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_background_texture.png; sourceTree = "<group>"; };
+		5494AF2315A1BD0500ED0801 /* grey_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_background.png; sourceTree = "<group>"; };
 		54965BD5159AD95800735945 /* MedicalDatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicalDatamodel.xcdatamodel; sourceTree = "<group>"; };
 		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		54B0B03815988DDF00068171 /* chronik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronik.png; sourceTree = "<group>"; };
-		54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TESingleDocumentListViewController.h; sourceTree = "<group>"; };
-		54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TESingleDocumentListViewController.m; sourceTree = "<group>"; };
 		54B0B0451598A65600068171 /* tyxAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAboutViewController.h; sourceTree = "<group>"; };
 		54B0B0461598A65600068171 /* tyxAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAboutViewController.m; sourceTree = "<group>"; };
 		54B0B0581599CD1F00068171 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -264,7 +268,8 @@
 		42D4DBC51594769A0088609B /* images */ = {
 			isa = PBXGroup;
 			children = (
-				548DE334159A3E2700757334 /* grey_background.png */,
+				5494AF2315A1BD0500ED0801 /* grey_background.png */,
+				5494AF2115A1B8D500ED0801 /* grey_background_texture.png */,
 				54B0B0611599E2E600068171 /* used images */,
 				54B0B03815988DDF00068171 /* chronik.png */,
 				4269917B1597D64E005DEACC /* neuro spinal.jpg */,
@@ -285,7 +290,6 @@
 				42D4DBC81594773A0088609B /* patient3.jpg */,
 				42D4DBC91594773A0088609B /* patient4.jpg */,
 				42D4DBAF159470200088609B /* chronik.png */,
-				42D4DBB2159470200088609B /* patientpicture.png */,
 				42D4DBB4159470200088609B /* XRay.png */,
 				422845CB15933BAC002A4F3F /* 1.jpg */,
 				422845CC15933BAC002A4F3F /* 2.jpg */,
@@ -307,8 +311,8 @@
 		54B0B0441598A64000068171 /* SingleViews */ = {
 			isa = PBXGroup;
 			children = (
-				54B0B04115989F9100068171 /* TESingleDocumentListViewController.h */,
-				54B0B04215989F9100068171 /* TESingleDocumentListViewController.m */,
+				5494AF1C15A1AFA500ED0801 /* TESingleDocumentListViewController.h */,
+				5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */,
 				54B0B0451598A65600068171 /* tyxAboutViewController.h */,
 				54B0B0461598A65600068171 /* tyxAboutViewController.m */,
 				54B0B076159A05A400068171 /* tyxSingleChronikViewController.h */,
@@ -322,6 +326,8 @@
 		54B0B0611599E2E600068171 /* used images */ = {
 			isa = PBXGroup;
 			children = (
+				42D4DBB2159470200088609B /* patientpicture.png */,
+				5494AF1F15A1B13200ED0801 /* knee.jpg */,
 				42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */,
 				42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */,
 				42D4DBB0159470200088609B /* GenericAppIcon.tif */,
@@ -414,7 +420,9 @@
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
 				54B0B03915988DDF00068171 /* chronik.png in Resources */,
 				54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */,
-				548DE335159A3E2700757334 /* grey_background.png in Resources */,
+				5494AF2015A1B13200ED0801 /* knee.jpg in Resources */,
+				5494AF2215A1B8D500ED0801 /* grey_background_texture.png in Resources */,
+				5494AF2415A1BD0500ED0801 /* grey_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,11 +444,11 @@
 				42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */,
 				42D4DBC4159474450088609B /* userselectionViewController.m in Sources */,
 				426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */,
-				54B0B04315989F9200068171 /* TESingleDocumentListViewController.m in Sources */,
 				54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */,
 				54B0B078159A05A400068171 /* tyxSingleChronikViewController.m in Sources */,
 				54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */,
 				5494AEBF159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m in Sources */,
+				5494AF1E15A1AFA500ED0801 /* TESingleDocumentListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

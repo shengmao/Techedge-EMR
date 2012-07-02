@@ -25,6 +25,26 @@
     [activitytype addObject:@"Anamnese"];
     [activitytype addObject:@"Diagnose"];
     [activitytype addObject:@"Befund"];
+    
+    //set up databasePath
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    //get documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    //Build the path to database file
+    databasePath = [[NSString alloc] initWithString:[docsDir stringByAppendingPathComponent:@"medicaldb02.sqlite"]];
+    
+    const char *dbPath = [databasePath UTF8String];
+    if (sqlite3_open(dbPath, &medicaldb)==SQLITE_OK) {
+        NSLog(@"Open database successfully");
+        sqlite3_close(medicaldb);
+    }
+    else {
+        NSLog(@"Failed to open database");
+    }
 }
 
 /*
@@ -71,10 +91,9 @@
 {
     const char *dbPath = [databasePath UTF8String];
     //sqlite3_stmt *statement;
-    
     if (sqlite3_open(dbPath, &medicaldb)==SQLITE_OK) {
         //create SQL statement
-        NSString *querySQL = [NSString stringWithFormat:@"INSERT INTO tab_activities (fk_idpatient, fk_iduser, fk_idactivitytype, dateinsert, longdescription) VALUES ('1','1',\"%@\",datetime(), '\"%@\"')",selectedPickerRow.text,longDescription.text];
+        NSString *querySQL = [NSString stringWithFormat:@"INSERT INTO tab_activities (fk_idpatient, fk_iduser, fk_idactivitytype, dateinsert, longdescription) VALUES ('1','1',%@,datetime(), \'%@\')",selectedPickerRow.text,longDescription.text];
         NSLog(@"---------------------STATEMENT----------------");
         NSLog(@"%@",querySQL);
         NSLog(@"----------------------------------------------");
@@ -82,9 +101,9 @@
         char *error = NULL;
         //send SQL statement to database
         sqlite3_exec(medicaldb, query_stmt, NULL, NULL, &error);
-        if ( sqlite3_exec(medicaldb, query_stmt, NULL,NULL, &error) == SQLITE_OK)
+        if (sqlite3_exec(medicaldb, query_stmt, NULL,NULL, &error) == SQLITE_OK)
         {
-            NSLog(@"Inserted.");
+            NSLog(@"Inserted.");        
         }
         else
         {

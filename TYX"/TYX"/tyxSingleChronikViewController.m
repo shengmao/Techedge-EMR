@@ -34,7 +34,12 @@
 {    
     NSLog(@"%s",__PRETTY_FUNCTION__);
     [super viewDidLoad];
-    //self.detailViewController = (tyxDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+//    //clear background of tableview
+////    [self.tableView setBackgroundColor:[UIColor clearColor]];
+//    [self.tableView setBackgroundColor:[UIColor clearColor]];
+////    //set up a background image for tableview
+////    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grey_background.png"]]];
+//    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grey_background.png"]]]; 
     
     
     //create a dictionary for each section and adds them to the array wholePatientList
@@ -192,7 +197,7 @@
     // Get the height of our measurement, with a minimum of 44 (standard cell size)
     CGFloat height = MAX(size.height, 70.0f);
     // return the height, with a bit of extra padding in
-    return height + (CELL_CONTENT_MARGIN * 2);
+    return height + (CELL_CONTENT_MARGIN * 4);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

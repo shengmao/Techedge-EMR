@@ -38,11 +38,12 @@
 //    NSLog(@"%@",path);
     
     //set up data for table view
-    fileNameList = [[NSArray alloc] initWithObjects:@"Intranet",@"Neuro SPine", @"QLPreview",@"localPDF", nil];
+    fileNameList = [[NSArray alloc] initWithObjects:@"Intranet",@"Neuro Spine", @"QLPreview",@"localPDF", @"Knie rechts", nil];
     
 	//set up pdfpath
     pdfPath = [[NSBundle mainBundle] pathForResource:@"PDF" ofType:@"pdf"];
-    imagePath = [[NSBundle mainBundle] pathForResource:@"Neuro Spine" ofType:@"jpg"];
+    imagePath = [[NSBundle mainBundle] pathForResource:@"knee" ofType:@"jpg"];
+    //imagePath = [[NSBundle mainBundle] pathForResource:@"Neuro Spine" ofType:@"jpg"];
     bildPath = [[NSBundle mainBundle] pathForResource:@"intranet_icon1" ofType:@"png"];
 
 }
