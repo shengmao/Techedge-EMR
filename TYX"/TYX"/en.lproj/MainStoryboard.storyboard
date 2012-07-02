@@ -1851,7 +1851,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qqe-7y-oFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="qPI-JL-rxg" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="LhY-61-uDL">
-                        <rect key="frame" x="0.0" y="64" width="703" height="660"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="660"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -2047,7 +2047,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5z-lf-Cd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="8JW-Co-fRR" customClass="tyxAddDiagnostikPickerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zjt-4g-8GU">
-                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <rect key="frame" x="0.0" y="44" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" id="4vX-rP-Bes">
@@ -2272,20 +2272,34 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v5o-h7-fGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Q9x-mh-mOb" customClass="tyxSingleChronikViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="iJq-gH-AFZ">
+                    <tableView key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="80" sectionHeaderHeight="10" sectionFooterHeight="10" id="iJq-gH-AFZ">
                         <rect key="frame" x="0.0" y="0.0" width="703" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
-                            <tableViewCell opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChronikCell" id="bGl-bn-Xjg">
-                                <rect key="frame" x="0.0" y="54" width="703" height="45"/>
+                            <tableViewCell opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChronikCell" rowHeight="80" id="bGl-bn-Xjg">
+                                <rect key="frame" x="0.0" y="54" width="703" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="43" y="1" width="617" height="43"/>
+                                    <rect key="frame" x="43" y="1" width="617" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hLF-tR-h8N">
-                                            <rect key="frame" x="20" y="0.0" width="577" height="43"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hLF-tR-h8N">
+                                            <rect key="frame" x="375" y="9" width="222" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gWQ-Do-ti4">
+                                            <rect key="frame" x="20" y="11" width="230" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="102" contentMode="left" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="3" adjustsFontSizeToFit="NO" id="oZO-kX-MKc">
+                                            <rect key="frame" x="20" y="40" width="577" height="27"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2299,13 +2313,13 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="Q9x-mh-mOb" id="Uq9-4I-X8Q"/>
-                            <outlet property="delegate" destination="Q9x-mh-mOb" id="bAH-QE-bZb"/>
+                            <outlet property="dataSource" destination="Q9x-mh-mOb" id="Ois-jK-10y"/>
+                            <outlet property="delegate" destination="Q9x-mh-mOb" id="9xR-zq-E6U"/>
                         </connections>
                     </tableView>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="view" destination="iJq-gH-AFZ" id="qiW-E0-sIp"/>
+                        <outlet property="view" destination="iJq-gH-AFZ" id="KgA-rc-p1l"/>
                     </connections>
                 </tableViewController>
             </objects>

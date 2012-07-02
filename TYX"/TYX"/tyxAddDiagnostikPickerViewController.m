@@ -74,7 +74,7 @@
     
     if (sqlite3_open(dbPath, &medicaldb)==SQLITE_OK) {
         //create SQL statement
-        NSString *querySQL = [NSString stringWithFormat:@"INSERT INTO tab_activities (fk_idpatient, fk_iduser, fk_idactivitytype, dateinsert, longdescription) VALUES ('1','1','\"%@\"','datetime()', '\"%@\"')",selectedPickerRow.text,longDescription.text];
+        NSString *querySQL = [NSString stringWithFormat:@"INSERT INTO tab_activities (fk_idpatient, fk_iduser, fk_idactivitytype, dateinsert, longdescription) VALUES ('1','1',\"%@\",datetime(), '\"%@\"')",selectedPickerRow.text,longDescription.text];
         NSLog(@"---------------------STATEMENT----------------");
         NSLog(@"%@",querySQL);
         NSLog(@"----------------------------------------------");
