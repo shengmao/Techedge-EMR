@@ -11,12 +11,16 @@
 
 @interface tyxMasterViewController () 
 //create a new property that can be used by other views
-@property NSMutableArray *wholePatientList;
+@property NSMutableArray *wholePatientList1;
+@property NSMutableArray *wholePatientList2;
+
 @end
 
 @implementation tyxMasterViewController
 
-@synthesize wholePatientList; //hold all patient records
+@synthesize wholePatientList1; //hold all patient records
+@synthesize wholePatientList2; //hold all patient records
+
 @synthesize detailViewController = _detailViewController;
 
 #pragma mark MasterView Controller
@@ -35,7 +39,9 @@
     
     
     //create a dictionary for each section and adds them to the array wholePatientList
-    wholePatientList = [[NSMutableArray alloc] init];
+    wholePatientList1 = [[NSMutableArray alloc] init];
+    wholePatientList2 = [[NSMutableArray alloc] init];
+
     
     //set up databasePath
     NSString *docsDir;
@@ -59,16 +65,51 @@
         //send SQL statement to database
         if (sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL)==SQLITE_OK) {
 
-            NSMutableArray *sectionNumberArray = [NSMutableArray arrayWithObjects: nil];
             //fetch result of SQL statement
             while (sqlite3_step(statement)==SQLITE_ROW) {
+                
+                NSString *patientsurName = [[NSString alloc] initWithUTF8String:(const char *)sqlite3_column_text(statement, 1)];
+                
                 NSString *patientName = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 2)];
-                [sectionNumberArray addObject:patientName];
+                
+                NSString *idpatient = [[NSString alloc] initWithUTF8String:(const char *) sqlite3_column_text(statement, 3)];
+                [idpatient intValue];
+               
+                NSLog(@"untill now it is ok 1");
+                
+                //check the idpatient value(used for section determination later), and then firstly create two corresponding NSarray to hold the column values from database, secondly create NSMutableDictionary to hold the NSArray, and thirdly create NSMutablearray(wholepatientlist1, wholepatientlist2) to store the corresponding NSMutabledictionary
+                if([idpatient intValue] == 1)
+                {
+                    NSArray  *sectionNumberArray1 = [NSArray arrayWithObjects:patientsurName, patientName, idpatient, nil ];
+                    NSMutableDictionary *sectionNumberDictionary1 = [NSMutableDictionary dictionaryWithObject:sectionNumberArray1 forKey:@"Patients"];
+                    [wholePatientList1 addObject: sectionNumberDictionary1];
+                    
+                    NSLog(@"%@", sectionNumberArray1);
+
+                }
+                else {
+                    NSArray  *sectionNumberArray2 = [NSArray arrayWithObjects:patientsurName, patientName, idpatient, nil ];
+                     NSMutableDictionary *sectionNumberDictionary2 = [NSMutableDictionary dictionaryWithObject:sectionNumberArray2 forKey:@"Patients"];
+                    [wholePatientList2 addObject: sectionNumberDictionary2];
+
+                }
+              
+                //[sectionNumberDictionary setObject:sectionNumberArray forKey:@"patient"];
+               
+                
+                
+                //release sectionNumberArray and sectionNumberDictionary
+                //[sectionNumberDictionary removeAllObjects];
+                
+                //[sectionNumberArray addObject:patientsurName];
+                //[sectionNumberArray addObject:patientName];
+                
+                
             }
-            
-            NSDictionary *sectionNumberDictionary = [NSDictionary dictionaryWithObject:sectionNumberArray forKey:@"Patients"];
-            [wholePatientList addObject:sectionNumberDictionary];
+            //NSMutableDictionary *sectionNumberDictionary = [NSMutableDictionary dictionaryWithObject:sectionNumberArray forKey:@"Patients"];
+            //[wholePatientList addObject:sectionNumberDictionary];
             sqlite3_finalize(statement);
+
         }
         sqlite3_close(medicaldb);
     }
@@ -98,18 +139,24 @@
 
 #pragma mark - Table View
 #pragma mark - TableView Sections
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [wholePatientList count];
+    //return [wholePatientList count];
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //returns number of rows in a section
-    NSDictionary *helperDictionary = [wholePatientList objectAtIndex:section];
-    NSArray *helperArray = [helperDictionary objectForKey:@"Patients"];
-    return [helperArray count];
+    //    NSMutableDictionary *helperDictionary = [wholePatientList objectAtIndex:section];
+    //    NSMutableArray *helperArray = [helperDictionary objectForKey:@"Patients"];
+    //    return [helperArray count];
+    if(section == 0){
+        return [wholePatientList1 count];
+    }
+    else  {
+        return [wholePatientList2 count];
+    }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -131,20 +178,45 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"PatientCell"];
     }
+    NSLog(@"untill now it is ok 2");
+    //    NSMutableDictionary *dictionary = [wholePatientList objectAtIndex:indexPath.section];
+    //    NSMutableArray *array = [dictionary objectForKey:@"Patients"];
+    //    NSString *cellValue = [array objectAtIndex:indexPath.row];
+    //    NSLog(@"%@", cellValue);
+    //    //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
+    //    UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
+    //    patientnameTextfield.text = cellValue;
+    //    
+    //    UILabel *patientsurnameTextfield = (UILabel *) [cell viewWithTag:101];
+    //    patientsurnameTextfield.text = @"";
+    //    
+    //    UIImageView *patientpicture = (UIImageView *) [cell viewWithTag:102];
+    //    patientpicture.image = [UIImage imageNamed:@"patientpicture.png"];
+    NSArray *array = [[NSArray alloc]init];
+    if(indexPath.section == 0)
+    {
+        NSMutableDictionary *dictionary = [wholePatientList1 objectAtIndex:indexPath.row];
+        array = [dictionary objectForKey:@"Patients"];
+    }
+    else {
+        NSMutableDictionary *dictionary = [wholePatientList2 objectAtIndex:indexPath.row];
+        array = [dictionary objectForKey:@"Patients"];
+
+    }
+    NSLog(@"%@",[array objectAtIndex:1]);
     
-    NSDictionary *dictionary = [wholePatientList objectAtIndex:indexPath.section];
-    NSArray *array = [dictionary objectForKey:@"Patients"];
-    NSString *cellValue = [array objectAtIndex:indexPath.row];
-    //setup custom tableviewcell, identifies the labels with tag numbers that can be set in IB inspector -> second possibility is to create a new TableViewCell Class
     UILabel *patientnameTextfield = (UILabel *)[cell viewWithTag:100];
-    patientnameTextfield.text = cellValue;
+    patientnameTextfield.text = [array objectAtIndex:1];
     
     UILabel *patientsurnameTextfield = (UILabel *) [cell viewWithTag:101];
-    patientsurnameTextfield.text = @"";
+    patientsurnameTextfield.text = [array objectAtIndex:0];
     
     UIImageView *patientpicture = (UIImageView *) [cell viewWithTag:102];
     patientpicture.image = [UIImage imageNamed:@"patientpicture.png"];
-
+    
+    
+    
+    
     return cell;
 }
 

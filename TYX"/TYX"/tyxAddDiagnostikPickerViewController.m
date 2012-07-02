@@ -91,11 +91,11 @@
             NSLog(@"Error: %s", error);
         }
         
-//        sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL); 
-//            NSLog(@"hier bin ich");
-//            //fetch result of SQL statement
-//        sqlite3_step(statement);
-//        sqlite3_finalize(statement);
+        //        sqlite3_prepare_v2(medicaldb, query_stmt, -1, &statement, NULL); 
+        //            NSLog(@"hier bin ich");
+        //            //fetch result of SQL statement
+        //        sqlite3_step(statement);
+        //        sqlite3_finalize(statement);
         sqlite3_close(medicaldb);
     }
 }
