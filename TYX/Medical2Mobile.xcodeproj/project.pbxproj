@@ -63,10 +63,12 @@
 		5495FEF015A2242500A37052 /* tyxSingleVitalFunctionGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495FEEF15A2242500A37052 /* tyxSingleVitalFunctionGraphViewController.m */; };
 		54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */; };
 		5496A11115A2C66600AB0CFB /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5496A11015A2C66600AB0CFB /* libCorePlot-CocoaTouch.a */; };
+		5496A13615A2F24100AB0CFB /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
+		5496A13715A2F32300AB0CFB /* medicaldb02.sqlite in Sources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
+		5496A13C15A2FA4700AB0CFB /* medicaldb02.sqlite in Frameworks */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
 		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
 		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
 		54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0581599CD1F00068171 /* libsqlite3.dylib */; };
-		54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 54B0B05C1599CF4700068171 /* medicaldb02.sqlite */; };
 		54B0B078159A05A400068171 /* tyxSingleChronikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B077159A05A400068171 /* tyxSingleChronikViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -222,12 +224,12 @@
 		5496A10E15A2C65300AB0CFB /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		5496A10F15A2C65300AB0CFB /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
 		5496A11015A2C66600AB0CFB /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicaldb02.sqlite; sourceTree = "<group>"; };
 		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		54B0B03815988DDF00068171 /* chronik.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chronik.png; sourceTree = "<group>"; };
 		54B0B0451598A65600068171 /* tyxAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAboutViewController.h; sourceTree = "<group>"; };
 		54B0B0461598A65600068171 /* tyxAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAboutViewController.m; sourceTree = "<group>"; };
 		54B0B0581599CD1F00068171 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		54B0B05C1599CF4700068171 /* medicaldb02.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicaldb02.sqlite; sourceTree = "<group>"; };
 		54B0B076159A05A400068171 /* tyxSingleChronikViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxSingleChronikViewController.h; sourceTree = "<group>"; };
 		54B0B077159A05A400068171 /* tyxSingleChronikViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxSingleChronikViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -237,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496A13C15A2FA4700AB0CFB /* medicaldb02.sqlite in Frameworks */,
 				5495FEED15A2236D00A37052 /* QuartzCore.framework in Frameworks */,
 				54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */,
 				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
@@ -311,7 +314,7 @@
 		428E25BE15877A52008BAA6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54B0B05C1599CF4700068171 /* medicaldb02.sqlite */,
+				5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */,
 				42D4DBC51594769A0088609B /* images */,
 				428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */,
 				428E25C015877A52008BAA6F /* InfoPlist.strings */,
@@ -610,12 +613,12 @@
 				42D4DBE61595297B0088609B /* Intranet-icon2.png in Resources */,
 				4269917D1597D64E005DEACC /* neuro spinal.jpg in Resources */,
 				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
-				54B0B05D1599CF4700068171 /* medicaldb02.sqlite in Resources */,
 				5494AF2215A1B8D500ED0801 /* grey_background_texture.png in Resources */,
 				5494AF2415A1BD0500ED0801 /* grey_background.png in Resources */,
 				5495FE6815A2160500A37052 /* Lateral.0001.jpg in Resources */,
 				5495FE6915A2160500A37052 /* Lateral.0002.jpg in Resources */,
 				5495FE6A15A2160500A37052 /* Lateral.0003.jpg in Resources */,
+				5496A13615A2F24100AB0CFB /* medicaldb02.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496A13715A2F32300AB0CFB /* medicaldb02.sqlite in Sources */,
 				428E25C415877A52008BAA6F /* main.m in Sources */,
 				428E25C815877A52008BAA6F /* tyxAppDelegate.m in Sources */,
 				428E25CE15877A52008BAA6F /* tyxMasterViewController.m in Sources */,

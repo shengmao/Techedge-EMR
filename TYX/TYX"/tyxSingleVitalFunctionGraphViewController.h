@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "CorePlot-CocoaTouch.h"
+#import "sqlite3.h"
 
 @interface tyxSingleVitalFunctionGraphViewController : UIViewController <CPTPlotDataSource>
 {
-    NSMutableArray *samples;
+    NSMutableArray *xyvaluepairs;
+    sqlite3 *medicaldb;
+    NSString *databasePath;
 }
 @end
