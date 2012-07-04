@@ -52,8 +52,6 @@
 		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
 		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
 		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
-		5480355415A2FF95005460D6 /* medicaldb02.sqlite in Sources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
-		5480355515A2FF99005460D6 /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
 		5494AEBF159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */; };
 		5494AF1E15A1AFA500ED0801 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */; };
 		5494AF2215A1B8D500ED0801 /* grey_background_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 5494AF2115A1B8D500ED0801 /* grey_background_texture.png */; };
@@ -65,6 +63,9 @@
 		5495FEF015A2242500A37052 /* tyxSingleVitalFunctionGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495FEEF15A2242500A37052 /* tyxSingleVitalFunctionGraphViewController.m */; };
 		54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */; };
 		5496A11115A2C66600AB0CFB /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5496A11015A2C66600AB0CFB /* libCorePlot-CocoaTouch.a */; };
+		5496A13615A2F24100AB0CFB /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
+		5496A13715A2F32300AB0CFB /* medicaldb02.sqlite in Sources */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
+		5496A13C15A2FA4700AB0CFB /* medicaldb02.sqlite in Frameworks */ = {isa = PBXBuildFile; fileRef = 5496A13415A2F05100AB0CFB /* medicaldb02.sqlite */; };
 		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
 		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
 		54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0581599CD1F00068171 /* libsqlite3.dylib */; };
@@ -238,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5496A13C15A2FA4700AB0CFB /* medicaldb02.sqlite in Frameworks */,
 				5495FEED15A2236D00A37052 /* QuartzCore.framework in Frameworks */,
 				54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */,
 				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
@@ -580,7 +582,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5480355515A2FF99005460D6 /* medicaldb02.sqlite in Resources */,
 				428E25C215877A52008BAA6F /* InfoPlist.strings in Resources */,
 				428E25CB15877A52008BAA6F /* MainStoryboard.storyboard in Resources */,
 				422845D015933BAC002A4F3F /* 1.jpg in Resources */,
@@ -617,6 +618,7 @@
 				5495FE6815A2160500A37052 /* Lateral.0001.jpg in Resources */,
 				5495FE6915A2160500A37052 /* Lateral.0002.jpg in Resources */,
 				5495FE6A15A2160500A37052 /* Lateral.0003.jpg in Resources */,
+				5496A13615A2F24100AB0CFB /* medicaldb02.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5480355415A2FF95005460D6 /* medicaldb02.sqlite in Sources */,
+				5496A13715A2F32300AB0CFB /* medicaldb02.sqlite in Sources */,
 				428E25C415877A52008BAA6F /* main.m in Sources */,
 				428E25C815877A52008BAA6F /* tyxAppDelegate.m in Sources */,
 				428E25CE15877A52008BAA6F /* tyxMasterViewController.m in Sources */,
