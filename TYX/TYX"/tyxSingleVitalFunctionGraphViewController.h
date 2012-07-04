@@ -11,7 +11,9 @@
 #import "sqlite3.h"
 
 @interface tyxSingleVitalFunctionGraphViewController : UIViewController <CPTPlotDataSource>
-{
+{	
+    IBOutlet CPTGraphHostingView *hostView;
+	CPTXYGraph *graph;
     NSMutableArray *xyvaluepairs;
     sqlite3 *medicaldb;
     NSString *databasePath;

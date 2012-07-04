@@ -7,14 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "sqlite3.h"
 
 @interface tyxAppDelegate : UIResponder <UIApplicationDelegate>
-{
-  // Database variables
-NSString *databaseName;
-NSString *databasePath;  
-}
 
 @property (strong, nonatomic) UIWindow *window;
 @end
