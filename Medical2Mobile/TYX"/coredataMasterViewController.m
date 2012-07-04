@@ -72,13 +72,8 @@
     for (Patient *patient in self.fetchedObjects) {
         NSLog(@"%@", patient.fname);
         NSLog(@"%@", patient.lname);
-    }
-        
-   //Default diplay of a patient in detail view.
-    self.detailViewController = (tyxDetailViewController *)[self.splitViewController.viewControllers lastObject];
-    Patient *object = [self.fetchedObjects objectAtIndex:0];
+    }        
 
-    self.detailViewController.detailItem = object;
 }
 
 //serialize the data in database otherwise only saved in memory.
@@ -94,6 +89,26 @@
             abort();
         } 
     }
+}
+
+
+//preselect a row.
+-(void)viewDidAppear:(BOOL)animated
+
+{
+    
+    //preselect a cell
+    
+    NSIndexPath *ip=[NSIndexPath indexPathForRow:0 inSection:0];
+    
+    [(UITableView*)self.view selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionBottom];
+    
+    //preselect a detailview 
+    self.detailViewController = (tyxDetailViewController *)[self.splitViewController.viewControllers lastObject];
+    Patient *object = [self.fetchedObjects objectAtIndex:0];
+    
+    self.detailViewController.detailItem = object;
+    
 }
 
 - (void)viewDidUnload

@@ -11,6 +11,7 @@
 #import "tyxAppDelegate.h"
 #import "Desease.h"
 #import "PossibleICDNumber.h"
+#import "Patient.h"
 
 @interface tyxDetailViewController ()
 - (void)configureView;
@@ -22,8 +23,12 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize patientview = _patientview;
+@synthesize shortdescription = _shortdescription;
+@synthesize ICDnumber = _ICDnumber;
+@synthesize startdate = _startdate;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize fetchedObjects = __fetchedObjects;
+@synthesize fetchedObjects1 = __fetchedObjects1;
 @synthesize masterview =_masterview;
 
 #pragma mark - Managing the detail item
@@ -43,18 +48,21 @@
 
 - (void)configureView
 {
+    
     // Update the user interface for the detail item.
     if (self.detailItem) {
      
-        // Configure the name of patient...
+    
+        
+        //Configure the name of patient...
         NSString  *patientname = [[NSString alloc] init];
         patientname = [patientname stringByAppendingString: [self.detailItem fname]];
         patientname = [patientname stringByAppendingString:@" "];
         patientname = [patientname stringByAppendingString:[self.detailItem lname]];
 
+        //configure the patient name.
         self.detailDescriptionLabel.text = patientname;
         NSLog(@"detailDescriptionLabel passed successfully");
-        
         
         //Configure the patient picture.
         if([self.detailItem picture]){
@@ -64,9 +72,34 @@
         else{
             _patientview.image = [UIImage imageNamed:@"patientpicture.png"];
         }
-    }
+           
+        
+        NSEnumerator *enumerator = [[self.detailItem desease ] objectEnumerator ];
+        Desease *desease;
+        
+        if ([[self.detailItem desease] count] >= 1) {
+                while (desease = [enumerator nextObject]){
+                    self.shortdescription.text = [[desease possibleicdnumber] field7_description];
+                    self.ICDnumber.text = [[desease possibleicdnumber] field4_primaryKey]; 
+                    
+                    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                    [formatter setDateFormat:@"dd-MM-yyyy"];
+                    NSString *stringFromDate = [formatter stringFromDate:[desease datestart]];
+                    self.startdate.text = stringFromDate;
+                    
+                    
+                }                       } else {
+                    self.shortdescription.text =@"Short Description";
+                    self.ICDnumber.text = @"ICD Number";
+                    self.startdate.text =@"14.02.2012";
+                }
+                
+   }
+     
     
 }
+
+
 
 - (void) acesscoredta
 {
@@ -77,6 +110,7 @@
 //       self.managedObjectContext = [(tyxAppDelegate *)[[UIApplication sharedApplication] delegate]managedObjectContext]; 
 //       NSLog(@"After managedObjectContext: %@",  self.managedObjectContext);
 //    }
+//    
 //    //create a row in datatable Desease.
 //    Desease *desease = [NSEntityDescription insertNewObjectForEntityForName:@"Desease" inManagedObjectContext:self.managedObjectContext];
 //    [desease setDatestart:[NSDate date]];    
@@ -112,14 +146,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self acesscoredta];
-    [self configureView];
+    //[self acesscoredta];
+    //[self configureView];
     
 }
 
 - (void)viewDidUnload
 {
     [self setPatientview:nil];
+    [self setShortdescription:nil];
+    [self setICDnumber:nil];
+    [self setStartdate:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     self.detailDescriptionLabel = nil;

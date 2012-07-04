@@ -1134,7 +1134,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Short Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pwO-6c-Ibc">
-                                                    <rect key="frame" x="20" y="0.0" width="275" height="21"/>
+                                                    <rect key="frame" x="20" y="0.0" width="484" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1272,8 +1272,11 @@
                     <tabBarItem key="tabBarItem" title="Steckbrief" id="dYM-qi-87H"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="ICDnumber" destination="mbC-ba-7Bg" id="K9A-JE-Yi5"/>
                         <outlet property="detailDescriptionLabel" destination="Ej4-kf-5Tg" id="gt8-3e-nO5"/>
                         <outlet property="patientview" destination="9dF-AT-N25" id="eEw-wc-3aw"/>
+                        <outlet property="shortdescription" destination="pwO-6c-Ibc" id="5wI-9f-tMz"/>
+                        <outlet property="startdate" destination="uXy-x8-LfP" id="Xrk-hO-sgf"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -3020,83 +3023,6 @@
         <image name="patient1.jpg" width="512" height="512"/>
         <image name="patientpicture.png" width="380" height="380"/>
     </resources>
-    <classes>
-        <class className="NeurospinewatermarkmasterviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeurospinewatermarkmasterviewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="usertabs" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TESingleDocumentListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TESingleDocumentListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="FileListTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="coredataMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/coredataMasterViewController.h"/>
-        </class>
-        <class className="tyxAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="versionNumber" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="tyxAddDiagnostikPickerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxAddDiagnostikPickerViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="activitytypePicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="choosenNumber" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="longDescription" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="selectedPickerRow" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="shortDescription" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tyxDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="patientview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxSingleChronikViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxSingleChronikViewController.h"/>
-        </class>
-        <class className="tyxloginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxloginViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="establishConnection:"/>
-                <relationship kind="outlet" name="companyLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="customerLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="passwortTextfield" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="usernameTextfield" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="tyxnewDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxnewDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dvimage1" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="tyxsecmasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxsecmasterViewController.h"/>
-        </class>
-        <class className="tyxthirddetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/tyxthirddetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Eclipse" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="userselectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/userselectionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="Intranetview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="calenderview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="emailview" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="patientview" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
