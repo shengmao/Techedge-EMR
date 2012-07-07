@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4209277915A22C4100EC06AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4209277815A22C4100EC06AA /* CoreData.framework */; };
+		4219CC0315A33AF800FEA21B /* coredataMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219CC0215A33AF800FEA21B /* coredataMasterViewController.m */; };
+		4219CC1115A3416D00FEA21B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219CC1015A3416D00FEA21B /* Patient.m */; };
+		4237F0AF15A4395A00837690 /* PossibleICDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F0AE15A4395A00837690 /* PossibleICDNumber.m */; };
+		4237F0B215A4396900837690 /* Desease.m in Sources */ = {isa = PBXBuildFile; fileRef = 4237F0B115A4396900837690 /* Desease.m */; };
+		4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4269917C1597D64E005DEACC /* Neuro Spine.jpg */; };
+		426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */; };
+		428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E25B715877A52008BAA6F /* UIKit.framework */; };
+		428E25BA15877A52008BAA6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E25B915877A52008BAA6F /* Foundation.framework */; };
+		428E25BC15877A52008BAA6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428E25BB15877A52008BAA6F /* CoreGraphics.framework */; };
+		428E25C215877A52008BAA6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 428E25C015877A52008BAA6F /* InfoPlist.strings */; };
+		428E25C415877A52008BAA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25C315877A52008BAA6F /* main.m */; };
+		428E25C815877A52008BAA6F /* tyxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25C715877A52008BAA6F /* tyxAppDelegate.m */; };
+		428E25CB15877A52008BAA6F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428E25C915877A52008BAA6F /* MainStoryboard.storyboard */; };
+		428E25CE15877A52008BAA6F /* tyxMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25CD15877A52008BAA6F /* tyxMasterViewController.m */; };
+		428E25D115877A52008BAA6F /* tyxDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25D015877A52008BAA6F /* tyxDetailViewController.m */; };
+		428E25D915877F4C008BAA6F /* tyxsecmasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */; };
+		428E25E3158789C2008BAA6F /* tyxsecdetaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */; };
+		42D4DBB6159470200088609B /* GenericAppIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = 42D4DBB0159470200088609B /* GenericAppIcon.tif */; };
+		42D4DBB7159470200088609B /* neurospinecenter_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */; };
+		42D4DBB8159470200088609B /* patientpicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D4DBB2159470200088609B /* patientpicture.png */; };
+		42D4DBB9159470200088609B /* techedge_leverage_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */; };
+		42D4DBC4159474450088609B /* userselectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D4DBC3159474450088609B /* userselectionViewController.m */; };
+		42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */; };
+		42EACA8F15A209960097D13E /* PDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 42EACA8E15A209960097D13E /* PDF.pdf */; };
+		42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */; };
+		42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */; };
+		5494AEBF159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */; };
+		5494AF1E15A1AFA500ED0801 /* TESingleDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */; };
+		5494AF2015A1B13200ED0801 /* knee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5494AF1F15A1B13200ED0801 /* knee.jpg */; };
+		54958A3715A574A20009E221 /* medicaldatamodel.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 54958A3615A574A20009E221 /* medicaldatamodel.sqlite */; };
+		54958A9215A57A900009E221 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54958A9115A57A900009E221 /* libCorePlot-CocoaTouch.a */; };
+		54958A9715A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54958A9615A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.m */; };
+		54958A9915A57BA30009E221 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54958A9815A57BA30009E221 /* QuartzCore.framework */; };
+		54958A9B15A57EDA0009E221 /* medicaldb02.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 54958A9A15A57EDA0009E221 /* medicaldb02.sqlite */; };
+		54958A9F15A589270009E221 /* Lateral.0001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54958A9C15A589270009E221 /* Lateral.0001.jpg */; };
+		54958AA015A589270009E221 /* Lateral.0002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54958A9D15A589270009E221 /* Lateral.0002.jpg */; };
+		54958AA115A589270009E221 /* Lateral.0003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54958A9E15A589270009E221 /* Lateral.0003.jpg */; };
+		54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */; };
+		54B0B0351598838100068171 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0331598836C00068171 /* QuickLook.framework */; };
+		54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B0461598A65600068171 /* tyxAboutViewController.m */; };
+		54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0B0581599CD1F00068171 /* libsqlite3.dylib */; };
+		54B0B078159A05A400068171 /* tyxSingleChronikViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0B077159A05A400068171 /* tyxSingleChronikViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4209277815A22C4100EC06AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4219CC0115A33AF800FEA21B /* coredataMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coredataMasterViewController.h; sourceTree = "<group>"; };
+		4219CC0215A33AF800FEA21B /* coredataMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = coredataMasterViewController.m; sourceTree = "<group>"; };
+		4219CC0F15A3416D00FEA21B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		4219CC1015A3416D00FEA21B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		4237F0AD15A4395A00837690 /* PossibleICDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleICDNumber.h; sourceTree = "<group>"; };
+		4237F0AE15A4395A00837690 /* PossibleICDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleICDNumber.m; sourceTree = "<group>"; };
+		4237F0B015A4396900837690 /* Desease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Desease.h; sourceTree = "<group>"; };
+		4237F0B115A4396900837690 /* Desease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Desease.m; sourceTree = "<group>"; };
+		4269917C1597D64E005DEACC /* Neuro Spine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neuro Spine.jpg"; sourceTree = "<group>"; };
+		426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NeurospinewatermarkmasterviewViewController.h; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.h; sourceTree = "<group>"; };
+		426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NeurospinewatermarkmasterviewViewController.m; path = watermarkmasterview/NeurospinewatermarkmasterviewViewController.m; sourceTree = "<group>"; };
+		428E25B315877A52008BAA6F /* Medical2Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medical2Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E25B715877A52008BAA6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		428E25B915877A52008BAA6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		428E25BB15877A52008BAA6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Medical2Mobile-Info.plist"; sourceTree = "<group>"; };
+		428E25C115877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		428E25C315877A52008BAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medical2Mobile-Prefix.pch"; sourceTree = "<group>"; };
+		428E25C615877A52008BAA6F /* tyxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxAppDelegate.h; sourceTree = "<group>"; };
+		428E25C715877A52008BAA6F /* tyxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxAppDelegate.m; sourceTree = "<group>"; };
+		428E25CA15877A52008BAA6F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		428E25CC15877A52008BAA6F /* tyxMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxMasterViewController.h; sourceTree = "<group>"; };
+		428E25CD15877A52008BAA6F /* tyxMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxMasterViewController.m; sourceTree = "<group>"; };
+		428E25CF15877A52008BAA6F /* tyxDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tyxDetailViewController.h; sourceTree = "<group>"; };
+		428E25D015877A52008BAA6F /* tyxDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tyxDetailViewController.m; sourceTree = "<group>"; };
+		428E25D715877F4C008BAA6F /* tyxsecmasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxsecmasterViewController.h; sourceTree = "<group>"; };
+		428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxsecmasterViewController.m; sourceTree = "<group>"; };
+		428E25E1158789C2008BAA6F /* tyxsecdetaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxsecdetaiViewController.h; sourceTree = "<group>"; };
+		428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxsecdetaiViewController.m; sourceTree = "<group>"; };
+		42D4DBB0159470200088609B /* GenericAppIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GenericAppIcon.tif; sourceTree = "<group>"; };
+		42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neurospinecenter_logo.jpg; sourceTree = "<group>"; };
+		42D4DBB2159470200088609B /* patientpicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patientpicture.png; sourceTree = "<group>"; };
+		42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = techedge_leverage_logo.jpg; sourceTree = "<group>"; };
+		42D4DBC2159474450088609B /* userselectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userselectionViewController.h; sourceTree = "<group>"; };
+		42D4DBC3159474450088609B /* userselectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userselectionViewController.m; sourceTree = "<group>"; };
+		42EA5F44158FA0DC001F5E99 /* tyxnewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxnewDetailViewController.h; sourceTree = "<group>"; };
+		42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxnewDetailViewController.m; sourceTree = "<group>"; };
+		42EACA8E15A209960097D13E /* PDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PDF.pdf; sourceTree = "<group>"; };
+		42EDD2B5158F298D001A2AD2 /* tyxloginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxloginViewController.h; sourceTree = "<group>"; };
+		42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxloginViewController.m; sourceTree = "<group>"; };
+		42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tyxthirddetailViewController.h; path = "Detail view/tyxthirddetailViewController.h"; sourceTree = "<group>"; };
+		42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tyxthirddetailViewController.m; path = "Detail view/tyxthirddetailViewController.m"; sourceTree = "<group>"; };
+		5494AEBD159F905000ED0801 /* tyxAddDiagnostikPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAddDiagnostikPickerViewController.h; sourceTree = "<group>"; };
+		5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAddDiagnostikPickerViewController.m; sourceTree = "<group>"; };
+		5494AF1C15A1AFA500ED0801 /* TESingleDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TESingleDocumentListViewController.h; path = ../TESingleDocumentListViewController.h; sourceTree = "<group>"; };
+		5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TESingleDocumentListViewController.m; path = ../TESingleDocumentListViewController.m; sourceTree = "<group>"; };
+		5494AF1F15A1B13200ED0801 /* knee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = knee.jpg; sourceTree = "<group>"; };
+		54958A3615A574A20009E221 /* medicaldatamodel.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicaldatamodel.sqlite; sourceTree = "<group>"; };
+		54958A4215A57A900009E221 /* _CPTConstraintsFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsFixed.h; sourceTree = "<group>"; };
+		54958A4315A57A900009E221 /* _CPTConstraintsRelative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTConstraintsRelative.h; sourceTree = "<group>"; };
+		54958A4415A57A900009E221 /* _CPTDarkGradientTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTDarkGradientTheme.h; sourceTree = "<group>"; };
+		54958A4515A57A900009E221 /* _CPTFillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillColor.h; sourceTree = "<group>"; };
+		54958A4615A57A900009E221 /* _CPTFillGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillGradient.h; sourceTree = "<group>"; };
+		54958A4715A57A900009E221 /* _CPTFillImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTFillImage.h; sourceTree = "<group>"; };
+		54958A4815A57A900009E221 /* _CPTPlainBlackTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainBlackTheme.h; sourceTree = "<group>"; };
+		54958A4915A57A900009E221 /* _CPTPlainWhiteTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTPlainWhiteTheme.h; sourceTree = "<group>"; };
+		54958A4A15A57A900009E221 /* _CPTSlateTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTSlateTheme.h; sourceTree = "<group>"; };
+		54958A4B15A57A900009E221 /* _CPTStocksTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTStocksTheme.h; sourceTree = "<group>"; };
+		54958A4C15A57A900009E221 /* _CPTXYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTXYTheme.h; sourceTree = "<group>"; };
+		54958A4D15A57A900009E221 /* CorePlot-CocoaTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CorePlot-CocoaTouch.h"; sourceTree = "<group>"; };
+		54958A4E15A57A900009E221 /* CPTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotation.h; sourceTree = "<group>"; };
+		54958A4F15A57A900009E221 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
+		54958A5015A57A900009E221 /* CPTAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxis.h; sourceTree = "<group>"; };
+		54958A5115A57A900009E221 /* CPTAxisLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabel.h; sourceTree = "<group>"; };
+		54958A5215A57A900009E221 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
+		54958A5315A57A900009E221 /* CPTAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisSet.h; sourceTree = "<group>"; };
+		54958A5415A57A900009E221 /* CPTAxisTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisTitle.h; sourceTree = "<group>"; };
+		54958A5515A57A900009E221 /* CPTBarPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBarPlot.h; sourceTree = "<group>"; };
+		54958A5615A57A900009E221 /* CPTBorderedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTBorderedLayer.h; sourceTree = "<group>"; };
+		54958A5715A57A900009E221 /* CPTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColor.h; sourceTree = "<group>"; };
+		54958A5815A57A900009E221 /* CPTColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTColorSpace.h; sourceTree = "<group>"; };
+		54958A5915A57A900009E221 /* CPTConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTConstraints.h; sourceTree = "<group>"; };
+		54958A5A15A57A900009E221 /* CPTDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTDefinitions.h; sourceTree = "<group>"; };
+		54958A5B15A57A900009E221 /* CPTExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTExceptions.h; sourceTree = "<group>"; };
+		54958A5C15A57A900009E221 /* CPTFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTFill.h; sourceTree = "<group>"; };
+		54958A5D15A57A900009E221 /* CPTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGradient.h; sourceTree = "<group>"; };
+		54958A5E15A57A900009E221 /* CPTGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraph.h; sourceTree = "<group>"; };
+		54958A5F15A57A900009E221 /* CPTGraphHostingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGraphHostingView.h; sourceTree = "<group>"; };
+		54958A6015A57A900009E221 /* CPTGridLineGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLineGroup.h; sourceTree = "<group>"; };
+		54958A6115A57A900009E221 /* CPTGridLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLines.h; sourceTree = "<group>"; };
+		54958A6215A57A900009E221 /* CPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTImage.h; sourceTree = "<group>"; };
+		54958A6315A57A900009E221 /* CPTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayer.h; sourceTree = "<group>"; };
+		54958A6415A57A900009E221 /* CPTLayerAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLayerAnnotation.h; sourceTree = "<group>"; };
+		54958A6515A57A900009E221 /* CPTLegend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegend.h; sourceTree = "<group>"; };
+		54958A6615A57A900009E221 /* CPTLegendEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegendEntry.h; sourceTree = "<group>"; };
+		54958A6715A57A900009E221 /* CPTLimitBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLimitBand.h; sourceTree = "<group>"; };
+		54958A6815A57A900009E221 /* CPTLineCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineCap.h; sourceTree = "<group>"; };
+		54958A6915A57A900009E221 /* CPTLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineStyle.h; sourceTree = "<group>"; };
+		54958A6A15A57A900009E221 /* CPTMutableLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableLineStyle.h; sourceTree = "<group>"; };
+		54958A6B15A57A900009E221 /* CPTMutableNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTMutableNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		54958A6C15A57A900009E221 /* CPTMutableNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableNumericData.h; sourceTree = "<group>"; };
+		54958A6D15A57A900009E221 /* CPTMutablePlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutablePlotRange.h; sourceTree = "<group>"; };
+		54958A6E15A57A900009E221 /* CPTMutableShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableShadow.h; sourceTree = "<group>"; };
+		54958A6F15A57A900009E221 /* CPTMutableTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableTextStyle.h; sourceTree = "<group>"; };
+		54958A7015A57A900009E221 /* CPTNumericData+TypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CPTNumericData+TypeConversion.h"; sourceTree = "<group>"; };
+		54958A7115A57A900009E221 /* CPTNumericData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericData.h; sourceTree = "<group>"; };
+		54958A7215A57A900009E221 /* CPTNumericDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTNumericDataType.h; sourceTree = "<group>"; };
+		54958A7315A57A900009E221 /* CPTPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPathExtensions.h; sourceTree = "<group>"; };
+		54958A7415A57A900009E221 /* CPTPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPieChart.h; sourceTree = "<group>"; };
+		54958A7515A57A900009E221 /* CPTPlatformSpecificCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificCategories.h; sourceTree = "<group>"; };
+		54958A7615A57A900009E221 /* CPTPlatformSpecificDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificDefines.h; sourceTree = "<group>"; };
+		54958A7715A57A900009E221 /* CPTPlatformSpecificFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlatformSpecificFunctions.h; sourceTree = "<group>"; };
+		54958A7815A57A900009E221 /* CPTPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlot.h; sourceTree = "<group>"; };
+		54958A7915A57A900009E221 /* CPTPlotArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotArea.h; sourceTree = "<group>"; };
+		54958A7A15A57A900009E221 /* CPTPlotAreaFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotAreaFrame.h; sourceTree = "<group>"; };
+		54958A7B15A57A900009E221 /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		54958A7C15A57A900009E221 /* CPTPlotRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotRange.h; sourceTree = "<group>"; };
+		54958A7D15A57A900009E221 /* CPTPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpace.h; sourceTree = "<group>"; };
+		54958A7E15A57A900009E221 /* CPTPlotSpaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSpaceAnnotation.h; sourceTree = "<group>"; };
+		54958A7F15A57A900009E221 /* CPTPlotSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotSymbol.h; sourceTree = "<group>"; };
+		54958A8015A57A900009E221 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
+		54958A8115A57A900009E221 /* CPTResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTResponder.h; sourceTree = "<group>"; };
+		54958A8215A57A900009E221 /* CPTScatterPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTScatterPlot.h; sourceTree = "<group>"; };
+		54958A8315A57A900009E221 /* CPTShadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTShadow.h; sourceTree = "<group>"; };
+		54958A8415A57A900009E221 /* CPTTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextLayer.h; sourceTree = "<group>"; };
+		54958A8515A57A900009E221 /* CPTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTextStyle.h; sourceTree = "<group>"; };
+		54958A8615A57A900009E221 /* CPTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTheme.h; sourceTree = "<group>"; };
+		54958A8715A57A900009E221 /* CPTTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTimeFormatter.h; sourceTree = "<group>"; };
+		54958A8815A57A900009E221 /* CPTTradingRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTTradingRangePlot.h; sourceTree = "<group>"; };
+		54958A8915A57A900009E221 /* CPTUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTUtilities.h; sourceTree = "<group>"; };
+		54958A8A15A57A900009E221 /* CPTXYAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxis.h; sourceTree = "<group>"; };
+		54958A8B15A57A900009E221 /* CPTXYAxisSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYAxisSet.h; sourceTree = "<group>"; };
+		54958A8C15A57A900009E221 /* CPTXYGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYGraph.h; sourceTree = "<group>"; };
+		54958A8D15A57A900009E221 /* CPTXYPlotSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTXYPlotSpace.h; sourceTree = "<group>"; };
+		54958A8E15A57A900009E221 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
+		54958A8F15A57A900009E221 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
+		54958A9015A57A900009E221 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		54958A9115A57A900009E221 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		54958A9515A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxSingleVitalFunctionGraphViewController.h; sourceTree = "<group>"; };
+		54958A9615A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxSingleVitalFunctionGraphViewController.m; sourceTree = "<group>"; };
+		54958A9815A57BA30009E221 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		54958A9A15A57EDA0009E221 /* medicaldb02.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = medicaldb02.sqlite; sourceTree = "<group>"; };
+		54958A9C15A589270009E221 /* Lateral.0001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lateral.0001.jpg; sourceTree = "<group>"; };
+		54958A9D15A589270009E221 /* Lateral.0002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lateral.0002.jpg; sourceTree = "<group>"; };
+		54958A9E15A589270009E221 /* Lateral.0003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lateral.0003.jpg; sourceTree = "<group>"; };
+		54965BD5159AD95800735945 /* MedicalDatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicalDatamodel.xcdatamodel; sourceTree = "<group>"; };
+		54B0B0331598836C00068171 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		54B0B0451598A65600068171 /* tyxAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxAboutViewController.h; sourceTree = "<group>"; };
+		54B0B0461598A65600068171 /* tyxAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxAboutViewController.m; sourceTree = "<group>"; };
+		54B0B0581599CD1F00068171 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		54B0B076159A05A400068171 /* tyxSingleChronikViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tyxSingleChronikViewController.h; sourceTree = "<group>"; };
+		54B0B077159A05A400068171 /* tyxSingleChronikViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tyxSingleChronikViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428E25B015877A52008BAA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54958A9915A57BA30009E221 /* QuartzCore.framework in Frameworks */,
+				4209277915A22C4100EC06AA /* CoreData.framework in Frameworks */,
+				54B0B05B1599CD2B00068171 /* libsqlite3.dylib in Frameworks */,
+				54B0B0351598838100068171 /* QuickLook.framework in Frameworks */,
+				428E25B815877A52008BAA6F /* UIKit.framework in Frameworks */,
+				428E25BA15877A52008BAA6F /* Foundation.framework in Frameworks */,
+				428E25BC15877A52008BAA6F /* CoreGraphics.framework in Frameworks */,
+				54958A9215A57A900009E221 /* libCorePlot-CocoaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4219CC0415A33B0800FEA21B /* CoredataViews */ = {
+			isa = PBXGroup;
+			children = (
+				4219CC0115A33AF800FEA21B /* coredataMasterViewController.h */,
+				4219CC0215A33AF800FEA21B /* coredataMasterViewController.m */,
+			);
+			name = CoredataViews;
+			sourceTree = "<group>";
+		};
+		421B1C0815A241B800A065AC /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				4237F0B015A4396900837690 /* Desease.h */,
+				4237F0B115A4396900837690 /* Desease.m */,
+				4237F0AD15A4395A00837690 /* PossibleICDNumber.h */,
+				4237F0AE15A4395A00837690 /* PossibleICDNumber.m */,
+				4219CC0F15A3416D00FEA21B /* Patient.h */,
+				4219CC1015A3416D00FEA21B /* Patient.m */,
+			);
+			name = Datamodel;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		426991831597D989005DEACC /* watermarkmasterview */ = {
+			isa = PBXGroup;
+			children = (
+				426991801597D973005DEACC /* NeurospinewatermarkmasterviewViewController.h */,
+				426991811597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m */,
+			);
+			name = watermarkmasterview;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		428E25A815877A52008BAA6F = {
+			isa = PBXGroup;
+			children = (
+				54958A9815A57BA30009E221 /* QuartzCore.framework */,
+				428E25BD15877A52008BAA6F /* TYX" */,
+				428E25B615877A52008BAA6F /* Frameworks */,
+				428E25B415877A52008BAA6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		428E25B415877A52008BAA6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428E25B315877A52008BAA6F /* Medical2Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428E25B615877A52008BAA6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4209277815A22C4100EC06AA /* CoreData.framework */,
+				54B0B0581599CD1F00068171 /* libsqlite3.dylib */,
+				54B0B0331598836C00068171 /* QuickLook.framework */,
+				428E25B715877A52008BAA6F /* UIKit.framework */,
+				428E25B915877A52008BAA6F /* Foundation.framework */,
+				428E25BB15877A52008BAA6F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		428E25BD15877A52008BAA6F /* TYX" */ = {
+			isa = PBXGroup;
+			children = (
+				54958A9415A57A960009E221 /* CorePlot */,
+				428E25C615877A52008BAA6F /* tyxAppDelegate.h */,
+				428E25C715877A52008BAA6F /* tyxAppDelegate.m */,
+				428E25C915877A52008BAA6F /* MainStoryboard.storyboard */,
+				42D4DBBC159472BA0088609B /* loginView */,
+				42D4DBBD159472ED0088609B /* splitView */,
+				426991831597D989005DEACC /* watermarkmasterview */,
+				42D4DBBE159473420088609B /* userselectionView */,
+				54965BD7159AD96400735945 /* CoreData */,
+				421B1C0815A241B800A065AC /* Datamodel */,
+				428E25BE15877A52008BAA6F /* Supporting Files */,
+			);
+			path = "TYX\"";
+			sourceTree = "<group>";
+		};
+		428E25BE15877A52008BAA6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54958A9A15A57EDA0009E221 /* medicaldb02.sqlite */,
+				54958A3615A574A20009E221 /* medicaldatamodel.sqlite */,
+				42EACA8E15A209960097D13E /* PDF.pdf */,
+				42D4DBC51594769A0088609B /* images */,
+				428E25BF15877A52008BAA6F /* Medical2Mobile-Info.plist */,
+				428E25C015877A52008BAA6F /* InfoPlist.strings */,
+				428E25C315877A52008BAA6F /* main.m */,
+				428E25C515877A52008BAA6F /* Medical2Mobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42D4DBBC159472BA0088609B /* loginView */ = {
+			isa = PBXGroup;
+			children = (
+				42EDD2B5158F298D001A2AD2 /* tyxloginViewController.h */,
+				42EDD2B6158F298D001A2AD2 /* tyxloginViewController.m */,
+			);
+			name = loginView;
+			sourceTree = "<group>";
+		};
+		42D4DBBD159472ED0088609B /* splitView */ = {
+			isa = PBXGroup;
+			children = (
+				4219CC0415A33B0800FEA21B /* CoredataViews */,
+				428E25CC15877A52008BAA6F /* tyxMasterViewController.h */,
+				428E25CD15877A52008BAA6F /* tyxMasterViewController.m */,
+				428E25CF15877A52008BAA6F /* tyxDetailViewController.h */,
+				428E25D015877A52008BAA6F /* tyxDetailViewController.m */,
+				42EA5F44158FA0DC001F5E99 /* tyxnewDetailViewController.h */,
+				42EA5F45158FA0DC001F5E99 /* tyxnewDetailViewController.m */,
+				428E25D715877F4C008BAA6F /* tyxsecmasterViewController.h */,
+				428E25D815877F4C008BAA6F /* tyxsecmasterViewController.m */,
+				428E25E1158789C2008BAA6F /* tyxsecdetaiViewController.h */,
+				428E25E2158789C2008BAA6F /* tyxsecdetaiViewController.m */,
+				42EEA646158B30F100D96DA1 /* tyxthirddetailViewController.h */,
+				42EEA647158B30F100D96DA1 /* tyxthirddetailViewController.m */,
+				54B0B0441598A64000068171 /* SingleViews */,
+			);
+			name = splitView;
+			sourceTree = "<group>";
+		};
+		42D4DBBE159473420088609B /* userselectionView */ = {
+			isa = PBXGroup;
+			children = (
+				42D4DBC2159474450088609B /* userselectionViewController.h */,
+				42D4DBC3159474450088609B /* userselectionViewController.m */,
+			);
+			name = userselectionView;
+			sourceTree = "<group>";
+		};
+		42D4DBC51594769A0088609B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				54958A9C15A589270009E221 /* Lateral.0001.jpg */,
+				54958A9D15A589270009E221 /* Lateral.0002.jpg */,
+				54958A9E15A589270009E221 /* Lateral.0003.jpg */,
+				42D4DBB2159470200088609B /* patientpicture.png */,
+				5494AF1F15A1B13200ED0801 /* knee.jpg */,
+				42D4DBB3159470200088609B /* techedge_leverage_logo.jpg */,
+				42D4DBB1159470200088609B /* neurospinecenter_logo.jpg */,
+				42D4DBB0159470200088609B /* GenericAppIcon.tif */,
+				4269917C1597D64E005DEACC /* Neuro Spine.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		54958A4115A57A900009E221 /* CorePlotHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				54958A4215A57A900009E221 /* _CPTConstraintsFixed.h */,
+				54958A4315A57A900009E221 /* _CPTConstraintsRelative.h */,
+				54958A4415A57A900009E221 /* _CPTDarkGradientTheme.h */,
+				54958A4515A57A900009E221 /* _CPTFillColor.h */,
+				54958A4615A57A900009E221 /* _CPTFillGradient.h */,
+				54958A4715A57A900009E221 /* _CPTFillImage.h */,
+				54958A4815A57A900009E221 /* _CPTPlainBlackTheme.h */,
+				54958A4915A57A900009E221 /* _CPTPlainWhiteTheme.h */,
+				54958A4A15A57A900009E221 /* _CPTSlateTheme.h */,
+				54958A4B15A57A900009E221 /* _CPTStocksTheme.h */,
+				54958A4C15A57A900009E221 /* _CPTXYTheme.h */,
+				54958A4D15A57A900009E221 /* CorePlot-CocoaTouch.h */,
+				54958A4E15A57A900009E221 /* CPTAnnotation.h */,
+				54958A4F15A57A900009E221 /* CPTAnnotationHostLayer.h */,
+				54958A5015A57A900009E221 /* CPTAxis.h */,
+				54958A5115A57A900009E221 /* CPTAxisLabel.h */,
+				54958A5215A57A900009E221 /* CPTAxisLabelGroup.h */,
+				54958A5315A57A900009E221 /* CPTAxisSet.h */,
+				54958A5415A57A900009E221 /* CPTAxisTitle.h */,
+				54958A5515A57A900009E221 /* CPTBarPlot.h */,
+				54958A5615A57A900009E221 /* CPTBorderedLayer.h */,
+				54958A5715A57A900009E221 /* CPTColor.h */,
+				54958A5815A57A900009E221 /* CPTColorSpace.h */,
+				54958A5915A57A900009E221 /* CPTConstraints.h */,
+				54958A5A15A57A900009E221 /* CPTDefinitions.h */,
+				54958A5B15A57A900009E221 /* CPTExceptions.h */,
+				54958A5C15A57A900009E221 /* CPTFill.h */,
+				54958A5D15A57A900009E221 /* CPTGradient.h */,
+				54958A5E15A57A900009E221 /* CPTGraph.h */,
+				54958A5F15A57A900009E221 /* CPTGraphHostingView.h */,
+				54958A6015A57A900009E221 /* CPTGridLineGroup.h */,
+				54958A6115A57A900009E221 /* CPTGridLines.h */,
+				54958A6215A57A900009E221 /* CPTImage.h */,
+				54958A6315A57A900009E221 /* CPTLayer.h */,
+				54958A6415A57A900009E221 /* CPTLayerAnnotation.h */,
+				54958A6515A57A900009E221 /* CPTLegend.h */,
+				54958A6615A57A900009E221 /* CPTLegendEntry.h */,
+				54958A6715A57A900009E221 /* CPTLimitBand.h */,
+				54958A6815A57A900009E221 /* CPTLineCap.h */,
+				54958A6915A57A900009E221 /* CPTLineStyle.h */,
+				54958A6A15A57A900009E221 /* CPTMutableLineStyle.h */,
+				54958A6B15A57A900009E221 /* CPTMutableNumericData+TypeConversion.h */,
+				54958A6C15A57A900009E221 /* CPTMutableNumericData.h */,
+				54958A6D15A57A900009E221 /* CPTMutablePlotRange.h */,
+				54958A6E15A57A900009E221 /* CPTMutableShadow.h */,
+				54958A6F15A57A900009E221 /* CPTMutableTextStyle.h */,
+				54958A7015A57A900009E221 /* CPTNumericData+TypeConversion.h */,
+				54958A7115A57A900009E221 /* CPTNumericData.h */,
+				54958A7215A57A900009E221 /* CPTNumericDataType.h */,
+				54958A7315A57A900009E221 /* CPTPathExtensions.h */,
+				54958A7415A57A900009E221 /* CPTPieChart.h */,
+				54958A7515A57A900009E221 /* CPTPlatformSpecificCategories.h */,
+				54958A7615A57A900009E221 /* CPTPlatformSpecificDefines.h */,
+				54958A7715A57A900009E221 /* CPTPlatformSpecificFunctions.h */,
+				54958A7815A57A900009E221 /* CPTPlot.h */,
+				54958A7915A57A900009E221 /* CPTPlotArea.h */,
+				54958A7A15A57A900009E221 /* CPTPlotAreaFrame.h */,
+				54958A7B15A57A900009E221 /* CPTPlotGroup.h */,
+				54958A7C15A57A900009E221 /* CPTPlotRange.h */,
+				54958A7D15A57A900009E221 /* CPTPlotSpace.h */,
+				54958A7E15A57A900009E221 /* CPTPlotSpaceAnnotation.h */,
+				54958A7F15A57A900009E221 /* CPTPlotSymbol.h */,
+				54958A8015A57A900009E221 /* CPTRangePlot.h */,
+				54958A8115A57A900009E221 /* CPTResponder.h */,
+				54958A8215A57A900009E221 /* CPTScatterPlot.h */,
+				54958A8315A57A900009E221 /* CPTShadow.h */,
+				54958A8415A57A900009E221 /* CPTTextLayer.h */,
+				54958A8515A57A900009E221 /* CPTTextStyle.h */,
+				54958A8615A57A900009E221 /* CPTTheme.h */,
+				54958A8715A57A900009E221 /* CPTTimeFormatter.h */,
+				54958A8815A57A900009E221 /* CPTTradingRangePlot.h */,
+				54958A8915A57A900009E221 /* CPTUtilities.h */,
+				54958A8A15A57A900009E221 /* CPTXYAxis.h */,
+				54958A8B15A57A900009E221 /* CPTXYAxisSet.h */,
+				54958A8C15A57A900009E221 /* CPTXYGraph.h */,
+				54958A8D15A57A900009E221 /* CPTXYPlotSpace.h */,
+				54958A8E15A57A900009E221 /* NSCoderExtensions.h */,
+				54958A8F15A57A900009E221 /* NSDecimalNumberExtensions.h */,
+				54958A9015A57A900009E221 /* NSNumberExtensions.h */,
+			);
+			path = CorePlotHeaders;
+			sourceTree = "<group>";
+		};
+		54958A9415A57A960009E221 /* CorePlot */ = {
+			isa = PBXGroup;
+			children = (
+				54958A4115A57A900009E221 /* CorePlotHeaders */,
+				54958A9115A57A900009E221 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = CorePlot;
+			sourceTree = "<group>";
+		};
+		54965BD7159AD96400735945 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		54B0B0441598A64000068171 /* SingleViews */ = {
+			isa = PBXGroup;
+			children = (
+				5494AF1C15A1AFA500ED0801 /* TESingleDocumentListViewController.h */,
+				5494AF1D15A1AFA500ED0801 /* TESingleDocumentListViewController.m */,
+				54B0B0451598A65600068171 /* tyxAboutViewController.h */,
+				54B0B0461598A65600068171 /* tyxAboutViewController.m */,
+				54B0B076159A05A400068171 /* tyxSingleChronikViewController.h */,
+				54B0B077159A05A400068171 /* tyxSingleChronikViewController.m */,
+				5494AEBD159F905000ED0801 /* tyxAddDiagnostikPickerViewController.h */,
+				5494AEBE159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m */,
+				54958A9515A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.h */,
+				54958A9615A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.m */,
+			);
+			name = SingleViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428E25B215877A52008BAA6F /* Medical2Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "Medical2Mobile" */;
+			buildPhases = (
+				428E25AF15877A52008BAA6F /* Sources */,
+				428E25B015877A52008BAA6F /* Frameworks */,
+				428E25B115877A52008BAA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medical2Mobile;
+			productName = "TYX\"";
+			productReference = 428E25B315877A52008BAA6F /* Medical2Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428E25AA15877A52008BAA6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = tyx;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "Medical2Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 428E25A815877A52008BAA6F;
+			productRefGroup = 428E25B415877A52008BAA6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428E25B215877A52008BAA6F /* Medical2Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428E25B115877A52008BAA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E25C215877A52008BAA6F /* InfoPlist.strings in Resources */,
+				428E25CB15877A52008BAA6F /* MainStoryboard.storyboard in Resources */,
+				42D4DBB6159470200088609B /* GenericAppIcon.tif in Resources */,
+				42D4DBB7159470200088609B /* neurospinecenter_logo.jpg in Resources */,
+				42D4DBB8159470200088609B /* patientpicture.png in Resources */,
+				42D4DBB9159470200088609B /* techedge_leverage_logo.jpg in Resources */,
+				4269917E1597D64E005DEACC /* Neuro Spine.jpg in Resources */,
+				5494AF2015A1B13200ED0801 /* knee.jpg in Resources */,
+				42EACA8F15A209960097D13E /* PDF.pdf in Resources */,
+				54958A3715A574A20009E221 /* medicaldatamodel.sqlite in Resources */,
+				54958A9B15A57EDA0009E221 /* medicaldb02.sqlite in Resources */,
+				54958A9F15A589270009E221 /* Lateral.0001.jpg in Resources */,
+				54958AA015A589270009E221 /* Lateral.0002.jpg in Resources */,
+				54958AA115A589270009E221 /* Lateral.0003.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428E25AF15877A52008BAA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E25C415877A52008BAA6F /* main.m in Sources */,
+				428E25C815877A52008BAA6F /* tyxAppDelegate.m in Sources */,
+				428E25CE15877A52008BAA6F /* tyxMasterViewController.m in Sources */,
+				428E25D115877A52008BAA6F /* tyxDetailViewController.m in Sources */,
+				428E25D915877F4C008BAA6F /* tyxsecmasterViewController.m in Sources */,
+				428E25E3158789C2008BAA6F /* tyxsecdetaiViewController.m in Sources */,
+				42EEA648158B30F100D96DA1 /* tyxthirddetailViewController.m in Sources */,
+				42EDD2B7158F298D001A2AD2 /* tyxloginViewController.m in Sources */,
+				42EA5F46158FA0DC001F5E99 /* tyxnewDetailViewController.m in Sources */,
+				42D4DBC4159474450088609B /* userselectionViewController.m in Sources */,
+				426991821597D973005DEACC /* NeurospinewatermarkmasterviewViewController.m in Sources */,
+				54B0B0471598A65600068171 /* tyxAboutViewController.m in Sources */,
+				54B0B078159A05A400068171 /* tyxSingleChronikViewController.m in Sources */,
+				54965BD6159AD95800735945 /* MedicalDatamodel.xcdatamodeld in Sources */,
+				5494AEBF159F905000ED0801 /* tyxAddDiagnostikPickerViewController.m in Sources */,
+				5494AF1E15A1AFA500ED0801 /* TESingleDocumentListViewController.m in Sources */,
+				4219CC0315A33AF800FEA21B /* coredataMasterViewController.m in Sources */,
+				4219CC1115A3416D00FEA21B /* Patient.m in Sources */,
+				4237F0AF15A4395A00837690 /* PossibleICDNumber.m in Sources */,
+				4237F0B215A4396900837690 /* Desease.m in Sources */,
+				54958A9715A57ABF0009E221 /* tyxSingleVitalFunctionGraphViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		428E25C015877A52008BAA6F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E25C115877A52008BAA6F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		428E25C915877A52008BAA6F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E25CA15877A52008BAA6F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428E25D215877A52008BAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		428E25D315877A52008BAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428E25D515877A52008BAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TYX\"/Medical2Mobile-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "TYX\"/Medical2Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TYX\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Medical2Mobile;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		428E25D615877A52008BAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TYX\"/Medical2Mobile-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "TYX\"/Medical2Mobile-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TYX\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Medical2Mobile;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428E25AD15877A52008BAA6F /* Build configuration list for PBXProject "Medical2Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E25D215877A52008BAA6F /* Debug */,
+				428E25D315877A52008BAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428E25D415877A52008BAA6F /* Build configuration list for PBXNativeTarget "Medical2Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E25D515877A52008BAA6F /* Debug */,
+				428E25D615877A52008BAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54965BD4159AD95800735945 /* MedicalDatamodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54965BD5159AD95800735945 /* MedicalDatamodel.xcdatamodel */,
+			);
+			currentVersion = 54965BD5159AD95800735945 /* MedicalDatamodel.xcdatamodel */;
+			path = MedicalDatamodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 428E25AA15877A52008BAA6F /* Project object */;
+}
